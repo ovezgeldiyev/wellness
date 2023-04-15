@@ -1,0 +1,309 @@
+.rooms {
+    padding: 100px 0 180px;
+    &__inner {
+        &-title {
+            text-align: center;
+            max-width: 1024px;
+            margin: 0 auto 55px;
+        }
+        &-slider {
+            max-width: 960px;
+            margin: 0 auto;
+            &-wrapper {
+                width: 100%;
+                position: relative;
+            }
+        }
+        .slick {
+            &-list {
+                overflow: visible;
+                padding: 0 !important;
+            }
+            &-slide {
+                opacity: .3;
+                transition: .3s ease;
+                pointer-events: none;
+            }
+            &-current {
+                opacity: 1;
+                pointer-events: all;
+            }
+            &-dots {
+                bottom: unset;
+                top: calc(100% + 60px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                li {
+                    &.slick-active {
+                        button {
+                            border-color: $main;
+                        }
+                    }
+                    button {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        border: 2px solid transparent;
+                        transition: .3s ease;
+                        background-color: transparent;
+                        &:before {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            width: 6px;
+                            height: 6px;
+                            content: "";
+                            background-color: $main;
+                            transform: translate(-50%, -50%);
+                            border-radius: 50%;
+                            opacity: .5;
+                        }
+                    }
+                }
+            }
+        }
+        h3 {
+            color: $primary;
+            i {
+                font-style: italic;
+            }
+        }
+    }
+    &Item {
+        margin: 0 20px;
+        &__inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            padding-bottom: 67%;
+        }
+        &__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            img {
+                @include fullImage;
+            }
+        }
+        &__content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            &-title {
+                background-color: $white;
+                padding: 30px 40px;
+            }
+            h6 {
+                margin-bottom: 10px;
+            }
+            h4 {
+                color: $primary;
+            }
+        }
+    }
+}
+// 1380px
+@mixin rooms-xxxlg-xxxxlg {
+    .rooms {
+
+    }
+}
+// 1250px
+@mixin rooms-xlg-xxlg-extra {
+    .rooms {
+
+    }
+}
+// 1180px
+@mixin rooms-xlg-xxlg {
+    .rooms {
+        padding: 90px 0 160px;
+        &Item {
+            margin: 0 10px;
+        }
+    }
+}
+// 1024px
+@mixin rooms-lg-xlg {
+    .rooms {
+        &__inner {
+            &-title {
+                margin-bottom: 45px;
+            }
+            &-slider {
+                width: calc(100% + 20px);
+                margin: 0 -10px;
+            }
+            .slick {
+                &-list {
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+// 930px
+@mixin rooms-md-lg {
+    .rooms {
+  
+    }
+}
+// 750px
+@mixin rooms-sm-md {
+    .rooms {
+        .auto__container {
+            padding: 0;
+        }
+        &__inner {
+            &-title {
+                padding: 0 40px;
+            }
+            &-slider {
+                width: calc(100% + 30px);
+                margin: 0 -15px;
+            }
+            .slick {
+                &-dots {
+                    li {
+                        &.slick-active {
+                            button {
+                                background-color: #d4c4ac;
+                                border-color: transparent;
+                            }
+                        }
+                        button {
+                            &::before {
+                                background-color: #d4c4ac;
+                                width: 8px;
+                                height: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &Item {
+            margin: 0 15px;
+            &__content {
+                &-title {
+                    padding: 25px 35px;
+                }
+            }
+            h6 {
+                margin-bottom: 5px;
+            }
+            .button {
+                padding: 30px 40px;
+            }
+        }
+    }
+}
+// 650px
+@mixin rooms-sm-md-extra {
+    .rooms {
+        &__inner {
+            &-title {
+                padding: 0 30px;
+                margin-bottom: 40px;
+            }
+        }
+        &Item {
+            &__content {
+                &-title {
+                    padding: 18px 22px;
+                }
+            }
+            h6 {
+                font-size: 12px;
+                line-height: 15px;
+                margin-bottom: 3px;
+            }
+            h4 {
+                font-size: 24px;
+                line-height: 28px;
+            }
+            .button {
+                padding: 20px 30px;
+            }
+        }
+    }
+}
+// 540px
+@mixin rooms-xsm-sm {
+    .rooms {
+        padding: 70px 0 140px;
+        &__inner {
+            &-slider {
+                width: calc(100% + 16px);
+                margin: 0 -8px;
+            }
+            &-title {
+                margin-bottom: 30px;
+            }
+            .slick {
+                &-dots {
+                    top: calc(100% + 35px);
+                    li {
+                        width: 16px;
+                        height: 16px;
+                        margin: 0 3px;
+                        button {
+                            &::before {
+                                width: 6px;
+                                height: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &Item {
+            margin: 0 8px;
+            &__content {
+                &-title {
+                    padding: 10px 14px;
+                }
+            }
+            h6 {
+                font-size: 10px;
+                line-height: 12px;
+                margin-bottom: 3px;
+            }
+            h4 {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .button {
+                padding: 12px 18px;
+                font-size: 10px;
+                line-height: 12px;
+                span {
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+// 440px
+@mixin rooms-xxsm-xsm {
+    .rooms {
+        padding: 50px 0 110px;
+        &__inner {
+            &-title {
+                padding: 0 20px;
+            }
+        }
+    }
+}

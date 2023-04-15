@@ -1,0 +1,200 @@
+.benefits {
+    padding: 90px 0;
+    background-color: #f9fafd;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-content {
+            width: calc(45% - 15px);
+            max-width: 520px;
+        }
+        &-row {
+            width: calc(55% - 15px);
+            max-width: 680px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        h2 {
+            color: $primary;
+        }
+    }
+    &Item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(50% - 10px);
+        max-width: 280px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        &:nth-child(n + 3) {
+            margin: 0;
+        }
+        &__icon {
+            width: 54px;
+            height: 54px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+
+            img {
+                width: 100%;
+            }
+        }
+        strong {
+            font-weight: 600;
+        }
+        p {
+            width: calc(100% - 84px);
+            font-size: 25px;
+            line-height: 30px;
+            br {
+                display: none;
+            }
+        }
+    }
+}
+// 1180px
+@mixin benefits-xlg-xxlg {
+    .benefits {
+        padding: 80px 0;
+        &Item {
+            &__icon {
+                margin-right: 10px;
+            }
+            p {
+                width: calc(100% - 64px);
+                font-size: 22px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+// 1024px
+@mixin benefits-lg-xlg {
+    .benefits {
+        padding: 70px 0;
+        &__inner {
+            &-content {
+                width: calc(42% - 10px);
+            }
+            &-row {
+                width: calc(58% - 10px);
+            }
+        }
+        &Item {
+            margin-bottom: 30px;
+        }
+    }
+}
+// 930px
+@mixin benefits-md-lg {
+    .benefits {
+        &__inner {
+            flex-direction: column;
+            &-content {
+                width: 100%;
+                margin-bottom: 55px;
+                max-width: unset;
+            }
+            &-row {
+                width: 100%;
+                max-width: unset;
+            }
+            h2 {
+                font-size: 65px;
+                line-height: 75px;
+                strong {
+                    display: block;
+                }
+            }
+        }
+        &Item {
+            &__icon {
+                margin-right: 20px;
+            }
+            p {
+                width: calc(100% - 74px);
+                font-size: 25px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+// 750px
+@mixin benefits-sm-md {
+    .benefits {
+ 
+    }
+}
+// 650px
+@mixin benefits-sm-md-extra {
+    .benefits {
+        &__inner {
+            &-content {
+                margin-bottom: 45px;
+            }
+            h2 {
+                font-size: 55px;
+                line-height: 60px;
+            }
+        }
+        &Item {
+            &__icon {
+                margin-right: 10px;
+            }
+            p {
+                width: calc(100% - 64px);
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+// 540px
+@mixin benefits-xsm-sm {
+    .benefits {
+        padding: 50px 0;
+        &__inner {
+            h2 {
+                font-size: 45px;
+                line-height: 50px;
+            }
+        }
+        &Item {
+            width: 100%;
+            max-width: unset;
+            &:nth-child(n) {
+                margin-bottom: 30px;
+            }
+            &:last-child {
+                margin: 0;
+            }
+            &__icon {
+                margin-right: 20px;
+            }
+            p {
+                width: calc(100% - 74px);
+                font-size: 26px;
+                line-height: 30px;
+                br {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+// 440px
+@mixin benefits-xxsm-xsm {
+    .benefits {
+        padding: 40px 0;
+        &__inner {
+            h2 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+    }
+}

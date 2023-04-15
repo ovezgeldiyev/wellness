@@ -1,0 +1,368 @@
+.activity {
+    padding: 50px 0;
+    position: relative;
+    margin-bottom: 80px;
+    &.rev {
+        &::before {
+            right: unset;
+            left: 0;
+            background-color: #f9f4f1;
+        }
+        .activity__inner {
+            &-image {
+                margin: 0 -21% 0 0;
+            }
+        }
+    }
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        background-color: #f9fafd;
+        content: "";
+        pointer-events: none;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-image {
+            width: calc(62% - 15px);
+            max-width: 770px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -21%;
+            img {
+                width: 100%;
+            }
+        }
+        &-content {
+            width: calc(60% - 15px);
+            max-width: 720px;
+        }
+        h6 {
+            font-size: 13px;
+            line-height: 16px;
+            padding-left: 80px;
+            position: relative;
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 60px;
+                height: 1px;
+                background-color: $main;
+                content: "";
+                opacity: .6;
+            }
+        }
+        h3 {
+            margin-bottom: 16px;
+            color: $primary;
+            strong {
+                font-weight: 500;
+            }
+        }
+        p {
+            margin-bottom: 24px;
+        }
+        a {
+            text-transform: uppercase;
+            color: $primary;
+            letter-spacing: 1px;
+            font-size: 13px;
+            line-height: 16px;
+            position: relative;
+            font-weight: 500;
+            font-family: $montserrat;
+            padding-bottom: 8px;
+            display: inline-flex;
+            align-items: center;
+            &.uniq {
+                padding: 0;
+                &::before {
+                    display: none;
+                }
+            }
+            &:hover {
+                opacity: 1;
+                color: $main;
+                b {
+                    &::before {
+                        background-color: $main;
+                    }
+                }
+                span {
+                    border-color: $primary;
+                    svg {
+                        fill: $primary;
+                    }
+                }
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $main;
+                transition: .3s ease;
+                pointer-events: none;
+            }
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                border: 1px solid $main;
+                margin-right: 15px;
+                transition: .3s ease;
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    fill: $main;
+                    transition: .3s ease;
+                }
+            }
+            b {
+                font-weight: 600;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: $primary;
+                    transition: .3s ease;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}
+// 1840px
+@mixin activity-xxxxxlg-xxxxxxlg {
+    .activity {
+        &.rev {
+            .activity__inner {
+                &-image {
+                    margin: 0 -16% 0 0;
+                }
+            }
+        }
+        &__inner {
+            &-image {
+                width: 55%;
+                margin-left: -16%;
+            }
+        }
+    }
+}
+// 1720px
+@mixin activity-xxxxxlg-xxxxxxlg-extra {
+    .activity {
+        &.rev {
+            .activity__inner {
+                &-image {
+                    margin: 0 -11% 0 0;
+                }
+            }
+        }
+        &__inner {
+            &-image {
+                width: 52%;
+                margin-left: -11%;
+            }
+        }
+    }
+}
+// 1600px
+@mixin activity-xxxxlg-xxxxxlg {
+    .activity {
+        &.rev {
+            .activity__inner {
+                &-image {
+                    margin: 0 -7% 0 0;
+                }
+            }
+        }
+        &__inner {
+            &-image {
+                width: 48%;
+                margin-left: -7%;
+            }
+        }
+    }
+}
+// 1500px
+@mixin activity-xxxxlg-xxxxxlg-extra {
+    .activity {
+        &.rev {
+            .activity__inner {
+                &-image {
+                    margin: 0 -3% 0 0;
+                }
+            }
+        }
+        &__inner {
+            &-image {
+                width: 44%;
+                margin-left: -3%;
+            }
+        }
+    }
+}
+// 1380px
+@mixin activity-xxxlg-xxxxlg {
+    .activity {
+        &::before {
+            width: 62%;
+        }
+        &.rev {
+            .activity__inner {
+                &-image {
+                    margin: 0 -20px 0 0;
+                }
+            }
+        }
+        &__inner {
+            &-image {
+                width: 44%;
+                margin-left: -20px;
+            }
+            &-content {
+                width: 56%;
+            }
+        }
+    }
+}
+// 1250px
+@mixin activity-xlg-xxlg-extra {
+    .activity {
+
+    }
+}
+// 1180px
+@mixin activity-xlg-xxlg {
+    .activity {
+        margin-bottom: 60px;
+        &__inner {
+            p {
+                margin-bottom: 18px;
+            }
+        }
+    }
+}
+// 1024px
+@mixin activity-lg-xlg {
+    .activity {
+        &::before {
+            width: 58%;
+        }
+        &__inner {
+            &-image {
+                width: 50%;
+            }
+            &-content {
+                width: 50%;
+            }
+        }
+    }
+}
+// 930px
+@mixin activity-md-lg {
+    .activity {
+        &::before {
+            width: 100%;
+        }
+        &.rev {
+            .activity__inner {
+                &-image {
+                    margin: 0 0 40px 0;
+                }
+            }
+        }
+        &__inner {
+            flex-direction: column;
+            &-image {
+                width: 100%;
+                margin: 0 0 40px 0;
+                order: -1;
+                max-width: unset;
+            }
+            &-content {
+                width: 100%;
+                max-width: unset;
+            }
+        }
+    }
+}
+// 750px
+@mixin activity-sm-md {
+    .activity {
+ 
+    }
+}
+// 650px
+@mixin activity-sm-md-extra {
+    .activity {
+
+    }
+}
+// 540px
+@mixin activity-xsm-sm {
+    .activity {
+        margin-bottom: 50px;
+        padding: 40px 0;
+        &.rev {
+            .activity__inner {
+                &-image {
+                    margin: 0 0 30px 0;
+                }
+            }
+        }
+        &__inner {
+            &-image {
+                margin-bottom: 30px;
+            }
+            h3 {
+                font-size: 26px;
+                line-height: 34px;
+            }
+            h6 {
+                padding-left: 50px;
+                &::before {
+                    width: 40px;
+                }
+            }
+            p {
+                margin-bottom: 14px;
+            }
+            a {
+                span {
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 10px;
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+// 440px
+@mixin activity-xxsm-xsm {
+    .activity {
+        margin-bottom: 40px;
+    }
+}

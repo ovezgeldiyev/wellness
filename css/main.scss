@@ -1,0 +1,31 @@
+@import "./fonts/stylesheet.css";
+@import "./easypick.css";
+
+// 1-main components
+@import "./components/1-main/variables.scss";
+@import "./components/1-main/mixin.scss";
+@import "./components/1-main/nulifier.scss";
+// 2-layout components
+@import "./components/2-layout/components.scss";
+@import "./components/2-layout/header.scss";
+@import "./components/2-layout/nav.scss";
+@import "./components/2-layout/footer.scss"; 
+
+@import "./components/2-layout/offer.scss";
+@import "./components/2-layout/benefits.scss";
+@import "./components/2-layout/rooms.scss";
+@import "./components/2-layout/stay.scss";
+@import "./components/2-layout/news.scss";
+@import "./components/2-layout/activity.scss";
+@import "./components/2-layout/follow.scss";
+@import "./components/2-layout/location.scss";
+@import "./components/2-layout/newsletter.scss";
+@import "./components/2-layout/contact.scss";
+
+// 3-pages components
+@import "./components/3-pages/index.scss";
+// responsive
+@import "./components/2-layout/responsive.scss";
+// slick
+@import "./components/2-layout/slick-theme.scss";
+@import "./components/2-layout/slick.scss";

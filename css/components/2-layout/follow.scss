@@ -1,0 +1,165 @@
+.follow {
+    padding: 40px 0 120px;
+    &__inner {
+        &-title {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+        &-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 -6px;
+        }
+        h2 {
+            color: $primary;
+        }
+    }
+    &Item {
+        margin: 6px;
+        width: calc(25% - 12px);
+        position: relative;
+        display: block;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+            .followItem__content {
+                opacity: 1;
+            }
+        }
+        &__image {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 100%;
+            position: relative;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include fullImage;
+            }
+        }
+        &__content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba($primary, .5);
+            opacity: 0;
+            transition: .3s ease;
+            &-icon {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: rgba($primary, .7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 60%;
+                    max-width: 25px;
+                }
+            }
+        }
+    }
+}
+// 1380px
+@mixin follow-xxxlg-xxxxlg {
+    .follow {
+
+    }
+}
+// 1250px
+@mixin follow-xlg-xxlg-extra {
+    .follow {
+
+    }
+}
+// 1180px
+@mixin follow-xlg-xxlg {
+    .follow {
+
+    }
+}
+// 1024px
+@mixin follow-lg-xlg {
+    .follow {
+        padding: 20px 0 100px;
+    }
+}
+// 930px
+@mixin follow-md-lg {
+    .follow {
+        &__inner {
+            &-row {
+                flex-wrap: wrap;
+                margin: 0 -10px;
+            }
+        }
+        &Item {
+            width: calc(50% - 20px);
+            margin: 10px;
+            &__content {
+                &-icon {
+                    width: 18%;
+                    height: 18%;
+                    img {
+                        max-width: unset;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+// 750px
+@mixin follow-sm-md {
+    .follow {
+ 
+    }
+}
+// 650px
+@mixin follow-sm-md-extra {
+    .follow {
+        padding: 20px 0 80px;
+        &__inner {
+            &-title {
+                margin-bottom: 26px;
+            }
+            &-row {
+                flex-wrap: wrap;
+                margin: 0 -5px;
+            }
+        }
+        &Item {
+            width: calc(50% - 10px);
+            margin: 5px;
+            &__content {
+                &-icon {
+                    width: 18%;
+                    height: 18%;
+                    img {
+                        max-width: unset;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+// 540px
+@mixin follow-xsm-sm {
+    .follow {
+
+    }
+}
+// 440px
+@mixin follow-xxsm-xsm {
+    .follow {
+
+    }
+}

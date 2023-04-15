@@ -1,0 +1,117 @@
+.newsletter {
+  padding: 120px 0;
+  .auto__container {
+    max-width: 1180px;
+  }
+  &__inner {
+    &-title {
+      text-align: center;
+      max-width: 1024px;
+      margin: 0 auto 40px;
+    }
+    &-form {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    h2 {
+      margin-bottom: 30px;
+      font-weight: 500;
+      color: $primary;
+    }
+    .input {
+      width: calc(33.3% - 10px);
+    }
+    .button {
+      width: calc(33.3% - 10px);
+      font-weight: 600;
+      background-color: #f9f4f1;
+      border-color: #dfd9d2;
+    }
+    & > p {
+      color: #6d7185;
+      text-align: center;
+      a {
+        text-decoration: underline;
+        color: #6d7185;
+      }
+    }
+  }
+}
+// 1180px
+@mixin newsletter-xlg-xxlg {
+  .newsletter {
+    padding: 90px 0;
+  }
+}
+// 930px
+@mixin newsletter-md-lg {
+  .newsletter {
+    padding: 70px 0;
+    &__inner {
+      &-title {
+        margin-bottom: 30px;
+      }
+      .input {
+        width: calc(33.3% - 6px);
+        input {
+          padding: 18px 20px;
+          font-size: 12px;
+        }
+      }
+      .button {
+        width: calc(33.3% - 6px);
+        padding: 18px 20px;
+        font-size: 12px;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+// 750px
+@mixin newsletter-sm-md {
+  .newsletter {
+    &__inner {
+      &-form {
+        flex-wrap: wrap;
+      }
+      .input {
+        width: calc(50% - 10px);
+        input {
+          padding: 22px 24px;
+          font-size: 13px;
+        }
+      }
+      .button {
+        width: 100%;
+        padding: 18px 20px;
+        font-size: 13px;
+        justify-self: center;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+// 650px
+@mixin newsletter-sm-md-extra {
+  .newsletter {
+  }
+}
+// 540px
+@mixin newsletter-xsm-sm {
+  .newsletter {
+    padding: 60px 0;
+    &__inner {
+        .input {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .button {
+          width: 100%;
+          margin: 0;
+        }
+      }
+  }
+}

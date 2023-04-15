@@ -1,0 +1,468 @@
+.header {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  width: calc(100% - 48px);
+  z-index: 10;
+  border-bottom: 1px solid #ffffff20;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #3a163d, #3a163d10);
+    content: "";
+    transition: 0.3s ease;
+  }
+  .auto__container {
+    max-width: 1920px;
+  }
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-name: sticky;
+    animation-duration: 0.4s;
+    background-color: $white;
+    &::before {
+      opacity: 0;
+    }
+    .button {
+      background-color: $main;
+    }
+  }
+  &.active {
+    background-color: $white;
+    &::before {
+      opacity: 0;
+    }
+    .header {
+      &__inner {
+        &-logo {
+          img {
+            &.dark {
+              display: block;
+            }
+            &.light {
+              display: none;
+            }
+          }
+        }
+        &-call {
+          span {
+            svg {
+              color: $primary;
+            }
+          }
+        }
+        &-search {
+          border-color: rgba($primary, 0.2);
+          span {
+            svg {
+              fill: $primary;
+            }
+          }
+        }
+        .lang {
+          color: $primary;
+          span {
+            &::before {
+              border-color: $main;
+            }
+          }
+        }
+      }
+    }
+    .nav {
+      &__inner {
+        li {
+          a {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  &__inner {
+    padding: 20px 0 16px;
+    display: flex;
+    justify-content: space-between;
+    &-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 160px;
+      img {
+        width: 100%;
+        &.dark {
+          display: none;
+        }
+      }
+    }
+    &-buttons {
+      display: flex;
+      align-items: center;
+      align-self: center;
+    }
+    &-search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 18px;
+      height: 100%;
+      border-right: 1px solid #ffffff40;
+      border-left: 1px solid #ffffff40;
+      margin-right: 10px;
+      span {
+        width: 22px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          width: 130%;
+          height: 130%;
+          fill: $white;
+          transition: 0.2s ease;
+        }
+      }
+    }
+    &-call {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 18px 4px;
+      span {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          width: 130%;
+          height: 130%;
+          transition: 0.2s ease;
+          color: $white;
+        }
+      }
+    }
+    &-text {
+      display: none;
+    }
+    .button {
+      margin-left: 25px;
+    }
+  }
+}
+.headerMenu {
+  position: fixed;
+  top: 143.56px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 143.56px);
+  z-index: 9;
+  background: rgba($color: #000000, $alpha: 0.4);
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  transition: .4s ease;
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+// 1580px
+@mixin header-xxxxlg-xxxxxlg {
+  .header {
+    &__inner {
+      &-logo {
+        width: 130px;
+      }
+      &-search {
+        padding: 16px 10px;
+        margin-right: 6px;
+      }
+      &-call {
+        padding: 16px 4px;
+      }
+    }
+  }
+}
+// 1380px
+@mixin header-xxxlg-xxxxlg {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .auto__container {
+      padding: 0 20px;
+    }
+    &__inner {
+      padding: 16px 0;
+      &-logo {
+        width: 120px;
+      }
+      &-search {
+        padding: 10px 8px;
+        margin-right: 6px;
+        span {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      &-call {
+        padding: 10px 3px;
+        span {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .button {
+        margin-left: 12px;
+      }
+      .lang {
+        margin-right: 12px;
+        font-size: 13px;
+        line-height: 16px;
+        span {
+          padding-right: 16px;
+        }
+      }
+    }
+  }
+}
+// 1180px
+@mixin header-xlg-xxlg {
+  .header {
+    &__inner {
+      &-logo {
+        width: 100px;
+      }
+      .lang {
+        margin-right: 12px;
+        font-size: 12px;
+        line-height: 14px;
+        span {
+          padding-right: 16px;
+          &::before {
+            width: 6px;
+            height: 6px;
+          }
+        }
+      }
+      .button {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+// 1024px
+@mixin header-lg-xlg {
+  .header {
+    .auto__container {
+      padding: 0 40px;
+    }
+    &.active {
+      .header__inner {
+        &-text {
+          color: $primary;
+        }
+        &-call {
+          &::before {
+            background-color: rgba($primary, 0.2);
+          }
+          &::after {
+            background-color: rgba($primary, 0.2);
+          }
+        }
+      }
+      .nav {
+        &__inner {
+          li {
+            a {
+              &:hover {
+                color: $main;
+              }
+            }
+          }
+        }
+      }
+      .burger {
+        span {
+          background-color: $primary;
+        }
+        &::before {
+          background-color: $primary;
+        }
+        &::after {
+          background-color: $primary;
+        }
+      }
+    }
+    &.new {
+      background-color: $white;
+      &::before {
+        display: none;
+      }
+      .header__inner {
+        &-logo {
+          img {
+            &.dark {
+              display: block;
+            }
+            &.light {
+              display: none;
+            }
+          }
+        }
+        &-text {
+          opacity: 0;
+          pointer-events: none;
+        }
+        &-call {
+          opacity: 0;
+          pointer-events: none;
+        }
+        .burger {
+          span {
+            background-color: $primary;
+          }
+          &::before {
+            background-color: $primary;
+          }
+          &::after {
+            background-color: $primary;
+          }
+        }
+      }
+    }
+    &Menu {
+      display: none;
+    }
+    &__inner {
+      padding: 20px 0;
+      &-logo {
+        width: 148px;
+      }
+      &-buttons {
+        .lang {
+          display: none;
+        }
+        .header__inner {
+          &-search {
+            display: none;
+          }
+        }
+        .button {
+          display: none;
+        }
+      }
+      &-call {
+        margin-right: 40px;
+        padding: 10px 26px;
+        position: relative;
+        transition: .3s ease;
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 1px;
+          height: 200%;
+          content: "";
+          background-color: #ffffff40;
+          transform: translateY(-50%);
+          transition: .2s ease;
+        }
+        &::after {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          width: 1px;
+          height: 200%;
+          content: "";
+          background-color: #ffffff40;
+          transform: translateY(-50%);
+          transition: .2s ease;
+        }
+        span {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      &-text {
+        display: block;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 0.8px;
+        font-family: $montserrat;
+        margin-right: 20px;
+        transition: .3s ease;
+      }
+    }
+  }
+}
+// 650px
+@mixin header-sm-md-extra {
+  .header {
+    .auto__container {
+      padding: 0 30px;
+    }
+    &__inner {
+      padding: 16px 0;
+      &-text {
+        font-size: 14px;
+        line-height: 18px;
+        margin-right: 16px;
+      }
+      &-logo {
+        width: 120px;
+      }
+      &-call {
+        padding: 6px 16px;
+        margin-right: 16px;
+        span {
+          width: 32px;
+          height: 32px;
+        }
+      }
+      .burger {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+// 440px
+@mixin header-xxsm-xsm {
+  .header {
+    .auto__container {
+      padding: 0 20px;
+    }
+    &__inner {
+      &-logo {
+        width: 100px;
+      }
+      &-text {
+        display: none;
+      }
+      &-call {
+        display: none;
+      }
+    }
+  }
+}
+@keyframes sticky {
+  0% {
+    top: -60px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}

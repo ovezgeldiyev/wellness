@@ -1,0 +1,541 @@
+.hero {
+  background: url("../images/hero.png") no-repeat center;
+  background-size: cover;
+  &__inner {
+    min-height: 80vh;
+    padding: 250px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    color: $white;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+}
+// 1380px
+@mixin hero-xxxlg-xxxxlg {
+  .hero {
+  }
+}
+// 1250px
+@mixin hero-xlg-xxlg-extra {
+  .hero {
+  }
+}
+// 1180px
+@mixin hero-xlg-xxlg {
+  .hero {
+  }
+}
+// 1024px
+@mixin hero-lg-xlg {
+  .hero {
+  }
+}
+// 930px
+@mixin hero-md-lg {
+  .hero {
+    &__inner {
+      padding: 200px 0 80px;
+      min-height: 100vh;
+      &-title {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+// 750px
+@mixin hero-sm-md {
+  .hero {
+  }
+}
+// 650px
+@mixin hero-sm-md-extra {
+  .hero {
+    &__inner {
+      padding: 200px 0 50px;
+      &-title {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+// 540px
+@mixin hero-xsm-sm {
+  .hero {
+    &__inner {
+      padding: 150px 0 30px;
+      &-title {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+// 440px
+@mixin hero-xxsm-xsm {
+  .hero {
+  }
+}
+.HeroCalendar {
+  background-color: $white;
+  width: 100%;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: -65px;
+  padding: 16px 16px 16px 0;
+  &__items {
+    display: flex;
+  }
+  &__item {
+    padding: 22px 35px;
+    box-sizing: border-box;
+    position: relative;
+    &-icon {
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      top: 50%;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #f0ece8;
+      transform: translate(50%, -50%);
+      z-index: 2;
+      svg {
+        width: 20px;
+        height: 20px;
+        color: $primary;
+      }
+    }
+    span {
+      position: absolute;
+      top: calc(100% + 1px);
+      left: -1px;
+    }
+    label {
+      display: block;
+      font-size: 12px;
+      font-family: $montserrat;
+      text-transform: uppercase;
+      line-height: 15px;
+      letter-spacing: 0.06em;
+      color: $black2;
+      font-weight: 400;
+      text-align: start;
+      margin-bottom: 10px;
+    }
+    input {
+      cursor: pointer;
+      font-family: $montserrat;
+      text-transform: uppercase;
+      font-size: 27px;
+      line-height: 30px;
+      font-weight: 500;
+      color: $primary;
+      width: 100%;
+    }
+    &:nth-child(1) {
+      width: 22%;
+    }
+    &:nth-child(2) {
+      padding: 22px 35px 22px 53px;
+      width: 23%;
+      border-left: 1px solid rgba($primary, 0.2);
+      border-right: 1px solid rgba($primary, 0.2);
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: $montserrat;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: $primary;
+    cursor: pointer;
+    @include transition;
+    span {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 15px;
+      svg {
+        width: 100%;
+        height: 100%;
+        fill: $white;
+        transition: 0.3s ease;
+      }
+    }
+    &:hover {
+      background-color: $main;
+    }
+  }
+  &__dropdown {
+    padding: 22px 35px;
+    box-sizing: border-box;
+    width: 25%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    label {
+      display: block;
+      font-size: 12px;
+      font-family: $montserrat;
+      text-transform: uppercase;
+      line-height: 15px;
+      letter-spacing: 0.06em;
+      color: #585962;
+      font-weight: 400;
+      text-align: start;
+      margin-bottom: 10px;
+    }
+    &-title {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &.active {
+        .HeroCalendar__dropdown-title {
+          &-image {
+            transform: rotate(-180deg);
+          }
+        }
+      }
+      input {
+        pointer-events: none;
+        font-family: $montserrat;
+        font-size: 27px;
+        line-height: 30px;
+        font-weight: 500;
+        color: $primary;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      &-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include transition;
+        width: 24px;
+        height: 24px;
+        svg {
+          width: 100%;
+          height: 100%;
+          color: $primary;
+        }
+      }
+    }
+    &-content {
+      padding: 40px 80px 40px 45px;
+      position: absolute;
+      background: $white;
+      top: calc(100% + 1px);
+      left: -1px;
+      width: calc(100% + 2px);
+      min-width: 424px;
+      z-index: 1;
+      border-left: 1px solid rgba($primary, 0.2);
+      border-right: 1px solid rgba($primary, 0.2);
+      border-bottom: 1px solid rgba($primary, 0.2);
+      opacity: 0;
+      visibility: hidden;
+      max-height: 0;
+      @include transition;
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        max-height: 300px;
+      }
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba($primary, 0.2);
+      &:last-child {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      &-text {
+        font-family: $montserrat;
+        font-weight: 500;
+        font-size: 15px;
+        color: $primary;
+        line-height: 1.2;
+        text-align: start;
+        span {
+          margin-top: 10px;
+          font-weight: 300;
+          display: block;
+          font-size: 14px;
+          color: #585962;
+          line-height: 1.2;
+        }
+      }
+      &-input {
+        display: flex;
+        align-items: center;
+        input {
+          pointer-events: none;
+          width: 35px;
+          height: 35px;
+          margin: 0 10px;
+          font-size: 15px;
+          font-family: $montserrat;
+          color: $primary;
+          line-height: 1.2;
+          text-align: center;
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+          input[type="number"] {
+            -moz-appearance: textfield;
+          }
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+          display: none;
+        }
+
+        /* Firefox */
+        input[type="number"] {
+          -moz-appearance: textfield;
+        }
+        .btn {
+          cursor: pointer;
+          position: relative;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: none;
+          border: 1px solid $primary;
+          font-size: 22px;
+          font-family: $montserrat;
+          color: $primary;
+          line-height: 1;
+          text-align: center;
+          @include transition;
+          &:disabled {
+            opacity: 0.3;
+            &:hover {
+              background: none;
+              svg {
+                color: $primary;
+              }
+            }
+          }
+          &:hover {
+            background: $primary;
+            svg {
+              color: $white;
+            }
+          }
+          svg {
+            width: 20px;
+            height: 20px;
+            color: $primary;
+            @include transition;
+          }
+        }
+      }
+    }
+  }
+}
+// 1380px
+@mixin HeroCalendar-xxxlg-xxxxlg {
+  .HeroCalendar {
+    &__item {
+      input {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    &__dropdown {
+      &-title {
+        input {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+// 1250px
+@mixin HeroCalendar-xlg-xxlg-extra {
+  .HeroCalendar {
+  }
+}
+// 1180px
+@mixin HeroCalendar-xlg-xxlg {
+  .HeroCalendar {
+    padding: 12px;
+    bottom: -60px;
+    &__item {
+      padding: 20px;
+      &:nth-child(2) {
+        padding: 20px 25px 20px 43px;
+        width: 23%;
+      }
+    }
+    &__dropdown {
+      padding: 20px 15px;
+      &-content {
+        min-width: 324px;
+        padding: 20px 15px 20px 15px;
+      }
+    }
+  }
+}
+
+@mixin HeroCalendar-lg-xlg {
+  .HeroCalendar {
+    bottom: -57.5px;
+    &__item {
+      label {
+        margin-bottom: 4px;
+      }
+      input {
+        font-size: 16px;
+      }
+    }
+    &__dropdown {
+      label {
+        margin-bottom: 4px;
+      }
+      &-title {
+        input {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@mixin HeroCalendar-md-lg {
+  .HeroCalendar {
+    padding: 0;
+    position: static;
+    &__items {
+      flex-wrap: wrap;
+    }
+    &__item {
+      padding: 40px;
+      width: 50% !important;
+      &-icon {
+        width: 50px;
+        height: 50px;
+      }
+      &:nth-child(2) {
+        padding: 40px;
+      }
+      label {
+        font-size: 15px;
+        line-height: 18px;
+      }
+      input {
+        font-size: 32px;
+        line-height: 37px;
+      }
+    }
+    &__dropdown {
+      display: none;
+      padding: 40px;
+      width: 50%;
+    }
+    &__button {
+      width: 100%;
+      padding: 50px 30px;
+      font-size: 25px;
+      line-height: 30px;
+      span {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+@mixin HeroCalendar-sm-md-extra {
+  .HeroCalendar {
+    &__item {
+      padding: 25px 40px 25px 20px;
+      &:nth-child(2) {
+      padding: 25px 20px 25px 40px;
+        
+      }
+      &-icon {
+        width: 40px;
+        height: 40px;
+      }
+      label {
+        font-size: 12px;
+        line-height: 14px;
+      }
+      input {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    &__button {
+      width: 100%;
+      padding: 35px 10px;
+      font-size: 17px;
+      line-height: 22px;
+      span {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+@mixin HeroCalendar-xsm-sm {
+  .HeroCalendar {
+    &__item {
+      width: 100% !important;
+      border-bottom: 1px solid rgba(14, 26, 71, 0.2);
+      padding: 20px;
+      span {
+        top: calc(200% + 2px);
+        z-index: 1;
+      }
+      &-icon {
+        width: 35px;
+        height: 35px;
+        top: unset;
+        right: unset;
+        left: 50%;
+        bottom: -18px;
+        transform: translate(-50%, 0) rotate(90deg);
+      }
+      &:nth-child(2) {
+        padding: 20px;
+        border: unset;
+      }
+    }
+    &__button {
+      width: 100%;
+      padding: 25px 0;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
