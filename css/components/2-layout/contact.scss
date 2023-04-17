@@ -1,6 +1,8 @@
 .contact {
   background-color: #f9fafd;
   padding: 50px 0;
+  border-bottom: 1px solid #0e1a4720;
+  
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -48,10 +50,10 @@
     &__content {
       width: calc(100% - 90px);
     }
-    h6 {
+    .title6 {
       margin-bottom: 6px;
     }
-    h5 {
+    .title5 {
       color: $primary;
       font-weight: 500;
     }
@@ -92,11 +94,11 @@
           height: 44px;
         }
       }
-      h5 {
+      .title5 {
         font-size: 20px;
         line-height: 24px;
       }
-      h6 {
+      .title6 {
         font-size: 13px;
         line-height: 16px;
         margin-bottom: 4px;
@@ -108,11 +110,11 @@
 @mixin contact-md-lg {
   .contact {
     &Item {
-      h5 {
+      .title5 {
         font-size: 18px;
         line-height: 22px;
       }
-      h6 {
+      .title6 {
         font-size: 11px;
         line-height: 14px;
         margin-bottom: 4px;
@@ -159,11 +161,11 @@
             }
         }
       }
-      h5 {
+      .title5 {
         font-size: 24px;
         line-height: 28px;
       }
-      h6 {
+      .title6 {
         font-size: 15px;
         line-height: 18px;
         margin-bottom: 6px;

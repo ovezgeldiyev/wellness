@@ -1,10 +1,9 @@
-h1 {
+.title1 {
   font-weight: 500;
   font-size: 110px;
   line-height: 118px;
 }
-
-h2 {
+.title2 {
   font-weight: 400;
   font-size: 63px;
   line-height: 69px;
@@ -16,26 +15,22 @@ h2 {
     font-weight: 500;
   }
 }
-
-h3 {
+.title3 {
   font-weight: 400;
   font-size: 48px;
   line-height: 60px;
 }
-
-h4 {
+.title4 {
   font-weight: 500;
   font-size: 33px;
   line-height: 44px;
 }
-
-h5 {
+.title5 {
   font-weight: 500;
   font-size: 27px;
   line-height: 33px;
 }
-
-h6 {
+.title6 {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
@@ -52,7 +47,9 @@ h6 {
     letter-spacing: 0.6px;
   }
 }
-p {
+.paragraph {
+  font-size: 24px;
+  line-height: 32px;
   &.big {
     font-size: 27px;
     line-height: 38px;
@@ -64,8 +61,9 @@ p {
 }
 .main {
   overflow: hidden;
-  padding: 20px 25px;
+  padding: 20px 25px 0 25px;
   position: relative;
+
 }
 .button {
   display: inline-flex;
@@ -97,6 +95,11 @@ p {
     padding: 15px 26px;
     border: 1px solid #aaa7a4;
     background-color: #b0957360;
+    font-weight: 500;
+
+    svg {
+      color: $white;
+    }
     span {
       width: 26px;
       height: 26px;
@@ -197,6 +200,7 @@ p {
     background-color: $primary;
     padding: 0 15px;
     border-radius: 3px;
+    z-index: 999;
     a {
       margin-bottom: 4px;
       display: block;
@@ -281,6 +285,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $white;
   input {
     width: 100%;
     height: 100%;
@@ -291,7 +296,10 @@ p {
     letter-spacing: 0.8px;
     padding: 22px 30px;
     background-color: transparent;
-    border: 1px solid rgba($primary, 0.2);
+    border: 1px solid rgb(230, 230, 230);
+    text-align: left;
+    font-family: $montserrat;
+    
     &::placeholder {
       color: $black2;
     }

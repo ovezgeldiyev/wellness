@@ -24,7 +24,7 @@
       &:last-child {
         width: calc(28% - 15px);
       }
-      p {
+      .paragraph {
         font-family: $montserrat;
         line-height: 36px;
         a {
@@ -34,12 +34,8 @@
       }
       a {
         font-size: 17px;
-        line-height: 24px;
-        margin-bottom: 10px;
+        line-height: 36px;
         color: $black2;
-        &:last-child {
-          margin: 0;
-        }
         &:hover {
           opacity: 1;
           color: $main;
@@ -75,7 +71,7 @@
         }
       }
     }
-    h5 {
+    .title5 {
       color: $primary;
       margin-bottom: 25px;
     }
@@ -111,24 +107,26 @@
       display: flex;
       align-items: center;
       a {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 15px;
+        line-height: 24px;
         color: $primary;
         font-weight: 400;
         text-decoration: underline;
-        padding: 0 6px;
-        border-right: 1px solid $main;
         text-transform: uppercase;
-        &:last-child {
-          border: unset;
-        }
+        font-family: $montserrat;
         &.active {
           font-weight: 500;
           text-decoration: unset;
         }
       }
+      hr {
+        width: 1px;
+       height: 17px;
+       background-color: $main;
+       margin: 0 6px;
+      }
     }
-    p {
+    .paragraph {
       font-size: 14px;
       line-height: 18px;
       font-family: $montserrat;
@@ -148,7 +146,7 @@
         order: -1;
         margin-bottom: 20px;
       }
-      p {
+      .paragraph {
         font-size: 12px;
         line-height: 16px;
       }
@@ -219,7 +217,7 @@
         order: -1;
         margin: 0 0 15px 0;
       }
-      p {
+      .paragraph {
         font-size: 14px;
         line-height: 18px;
       }
@@ -257,16 +255,16 @@
           max-width: unset;
           margin: 0;
         }
-        h5 {
+        .title5 {
           margin-bottom: 18px;
           font-size: 28px;
           line-height: 34px;
         }
         a {
           font-size: 22px;
-          line-height: 28px;
+          line-height: 40px;
         }
-        p {
+        .paragraph {
           font-size: 22px;
           line-height: 34px;
         }

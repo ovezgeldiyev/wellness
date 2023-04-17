@@ -15,6 +15,18 @@
     content: "";
     transition: 0.3s ease;
   }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    box-shadow: 0px 0px 10px rgba(1, 0, 3,
+    0.15);
+    z-index: 99;
+    pointer-events: none;
+  }
   .auto__container {
     max-width: 1920px;
   }
@@ -26,15 +38,15 @@
     animation-name: sticky;
     animation-duration: 0.4s;
     background-color: $white;
+    box-shadow: 0px 0px 10px rgba(1, 0, 3,
+    0.15);
     &::before {
       opacity: 0;
-    }
-    .button {
-      background-color: $main;
     }
   }
   &.active {
     background-color: $white;
+    border-color: transparent;
     &::before {
       opacity: 0;
     }
@@ -62,6 +74,25 @@
           span {
             svg {
               fill: $primary;
+            }
+          }
+        }
+        &-buttons {
+          .button {
+            background-color: rgb(249, 244, 241);
+            border-color: rgb(223, 217, 210);
+            color: $primary;
+            font-weight: 600;
+            &:hover {
+              opacity: 1;
+              background-color: $main;
+              color: $white;
+              svg {
+                color: $white;
+              }
+            }
+            svg {
+              color: $main;
             }
           }
         }
@@ -135,14 +166,14 @@
       align-items: center;
       padding: 18px 4px;
       span {
-        width: 24px;
-        height: 24px;
+        width: 26px;
+        height: 26px;
         display: flex;
         justify-content: center;
         align-items: center;
         svg {
-          width: 130%;
-          height: 130%;
+          width: 140%;
+          height: 140%;
           transition: 0.2s ease;
           color: $white;
         }
@@ -156,6 +187,7 @@
     }
   }
 }
+
 .headerMenu {
   position: fixed;
   top: 143.56px;
@@ -167,7 +199,7 @@
   z-index: 90;
   opacity: 0;
   pointer-events: none;
-  transition: .4s ease;
+  transition: 0.4s ease;
   &.active {
     opacity: 1;
     pointer-events: all;
@@ -364,7 +396,7 @@
         margin-right: 40px;
         padding: 10px 26px;
         position: relative;
-        transition: .3s ease;
+        transition: 0.3s ease;
         &::before {
           position: absolute;
           top: 50%;
@@ -374,7 +406,7 @@
           content: "";
           background-color: #ffffff40;
           transform: translateY(-50%);
-          transition: .2s ease;
+          transition: 0.2s ease;
         }
         &::after {
           position: absolute;
@@ -385,7 +417,7 @@
           content: "";
           background-color: #ffffff40;
           transform: translateY(-50%);
-          transition: .2s ease;
+          transition: 0.2s ease;
         }
         span {
           width: 40px;
@@ -401,7 +433,7 @@
         letter-spacing: 0.8px;
         font-family: $montserrat;
         margin-right: 20px;
-        transition: .3s ease;
+        transition: 0.3s ease;
       }
     }
   }

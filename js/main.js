@@ -64,6 +64,9 @@ if (navMenu) {
       body.classList.remove("active");
       header.classList.remove("active");
       headerMenu.classList.remove("active");
+      if (header.classList.contains("sticky")) {
+        header.classList.add("active");
+      }
     }
   };
 }

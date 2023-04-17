@@ -6,7 +6,7 @@
       justify-content: space-between;
       align-items: flex-end;
       margin-bottom: 60px;
-      p {
+      .paragraph {
         width: calc(60% - 15px);
         max-width: 730px;
         text-align: end;
@@ -50,7 +50,7 @@
       flex-wrap: wrap;
       margin: 0 -6px;
     }
-    h2 {
+    .title2 {
       color: $primary;
     }
   }
@@ -114,10 +114,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 8px;
+      margin-bottom: 3px;
+      box-shadow: 0px 1px 5px 0px rgba(2, 3, 2, 0.15);
+      border-radius: 50%;
       img {
-        width: 100%;
+        width: 110%;
       }
+    }
+    .title4 {
+      font-size: 39px;
+      line-height: 100%;
+      text-shadow: 0px 0px 5px rgba(2, 3, 2, 0.15);
+      
     }
   }
 }
@@ -140,7 +148,7 @@
     &__inner {
       &-content {
         margin-bottom: 40px;
-        p {
+        .paragraph {
           width: calc(63% - 10px);
           br {
             display: none;
@@ -162,12 +170,12 @@
 // 930px
 @mixin offer-md-lg {
   .offer {
-    padding: 100px 0 70px;
+    padding: 70px 0;
     &__inner {
       &-content {
         flex-direction: column;
         align-items: center;
-        p {
+        .paragraph {
           width: 100%;
           text-align: center;
           max-width: 650px;
@@ -205,7 +213,7 @@
     &__inner {
       &-content {
         margin-bottom: 30px;
-        p {
+        .paragraph {
           &.big {
             font-size: 30px;
             line-height: 37px;
@@ -232,7 +240,7 @@
       &.big {
         width: 100%;
       }
-      h4 {
+      .title4 {
         font-size: 40px;
         line-height: 45px;
       }
@@ -248,7 +256,7 @@
         margin: 0 -36px;
       }
       &-content {
-        p {
+        .paragraph {
           &.big {
             font-size: 25px;
             line-height: 32px;
@@ -259,7 +267,7 @@
     &Item {
       margin: 6px;
       width: calc(50% - 12px);
-      h4 {
+      .title4 {
         font-size: 35px;
         line-height: 40px;
       }
@@ -274,7 +282,7 @@
         margin-bottom: 30px;
       }
       &-content {
-        p {
+        .paragraph {
           &.big {
             font-size: 22px;
             line-height: 28px;
@@ -283,7 +291,7 @@
       }
     }
     &Item {
-      h4 {
+      .title4 {
         font-size: 30px;
         line-height: 35px;
       }
@@ -293,9 +301,10 @@
 // 440px
 @mixin offer-xxsm-xsm {
   .offer {
+    padding: 50px 0;
     &__inner {
       &-content {
-        p {
+        .paragraph {
           &.big {
             font-size: 18px;
             line-height: 24px;
@@ -306,7 +315,7 @@
         width: calc(100% + 56px);
         margin: 0 -24px;
       }
-      h2 {
+      .title2 {
         font-size: 40px;
         line-height: 45px;
       }
@@ -319,7 +328,7 @@
         height: 30px;
         margin-bottom: 4px;
       }
-      h4 {
+      .title4 {
         font-size: 25px;
         line-height: 30px;
       }
