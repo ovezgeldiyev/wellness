@@ -191,6 +191,10 @@
     <!-- hero start
     =========================================== -->
     <section class="hero">
+      <div class="hero__bg">
+        <video class="avia__video" muted loop autoplay src="./images/hero.mp4"></video>
+        <!-- <img src="./images/hero.png" alt=""> -->
+      </div>
       <div class="auto__container">
         <div class="hero__inner">
           <div class="hero__inner-title">
@@ -1551,7 +1555,21 @@
   <script src="./js/easypick.js"></script>
   <script src="./js/steps.js"></script>
   <script src="./js/main.js"></script>
-
+  <script>
+    jQuery(document).ready(function () {
+      jQuery(".avia__video").attr("muted", "true");
+      jQuery(".avia__video").attr("loop", "true");
+      const videoElements = document.querySelectorAll(".avia__video");
+      videoElements.forEach((videoElement) => {
+        videoElement.autoplay = true;
+        videoElement.muted = true;
+        if (videoElement.playing) {
+        } else {
+          videoElement.play();
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
