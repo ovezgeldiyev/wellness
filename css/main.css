@@ -2388,6 +2388,8 @@ ul li {
           justify-content: flex-end;
   text-align: center;
   color: #fff;
+  position: relative;
+  z-index: 4;
 }
 .hero__inner .title2 {
   margin-bottom: 20px;
