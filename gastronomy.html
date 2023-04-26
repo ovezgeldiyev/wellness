@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Jost:wght@400;500;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Gastronomie v hotelu</title>
+</head>
+
+<body>
+    <main class="main sm">
+        <!-- header start
+    =========================================== -->
+        <header class="header light" id="header">
+            <div class="headerMenu" id="headerMenu">
+            </div>
+            <div class="headerSearch low" id="searchMenu">
+                <div class="headerSearch__inner">
+                    <form action="" class="headerSearch__inner-form">
+                        <span id="searchClose">
+                            zavřít
+                        </span>
+                        <label for="searchInput">Prohledat web:</label>
+                        <div class="headerSearch__inner-row">
+                            <div class="input">
+                                <input type="text" placeholder="Hledaný výraz..." id="searchInput">
+                            </div>
+                            <button type="submit" class="button secondary">
+                                <span>
+                                    <svg>
+                                        <use xlink:href="#searchIcon"></use>
+                                    </svg>
+                                </span>
+                                vyhledat
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="auto__container">
+                <div class="header__inner">
+                    <a href="index.html" class="header__inner-logo">
+                        <img class="light" src="./images/logo.png" alt="" />
+                        <img class="dark" src="./images/logo-dark.png" alt="" />
+                    </a>
+                    <nav class="nav" id="menu">
+                        <ul class="nav__inner">
+                            <li>
+                                <a id="navMenuBtn">
+                                    hotel
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    top nabídka
+                                </a>
+                            </li>
+                            <li>
+                                <a href="spa.html">
+                                    Wellness & spa
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Aquapark
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Svět pod hladinou
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    pro firmy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="activity.html">
+                                    aktivity
+                                </a>
+                            </li>
+                            <div class="nav__inner-buttons">
+                                <a href="tel:+420 374 768 687" class="button light">
+                                    +420 374 768 687
+                                </a>
+                                <a href="#" class="button light">
+                                    rezervovat
+                                </a>
+                                <div class="nav__inner-lang">
+                                    <a href="#">
+                                        deutsch
+                                    </a>
+                                    <hr>
+                                    <a href="#">
+                                        english
+                                    </a>
+                                </div>
+                            </div>
+                        </ul>
+                        <div class="navMenu" id="navMenu">
+                            <div class="navMenu__inner">
+                                <div class="navMenu__inner-col">
+                                    <a href="rooms.html">
+                                        Naše pokoje
+                                    </a>
+                                    <a href="#">
+                                        Ceník ubytování
+                                    </a>
+                                    <a href="#">
+                                        Fotogalerie
+                                    </a>
+                                    <a href="#">
+                                        Areál hotelu
+                                    </a>
+                                    <a href="#">
+                                        Bezbariérový přístup
+                                    </a>
+                                </div>
+                                <div class="navMenu__inner-col">
+                                    <div class="navMenu__item">
+                                        <h5 class="title5 navMenu__item-btn">
+                                            Kongresy a firemní akce
+                                        </h5>
+                                        <div class="navMenu__item-dropdown">
+                                            <a href="#">
+                                                Multifunkční sály
+                                            </a>
+                                            <a href="#">
+                                                Catering
+                                            </a>
+                                            <a href="#">
+                                                Teambuilding
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#">
+                                        Pro školy
+                                    </a>
+                                </div>
+                                <div class="navMenu__inner-col">
+                                    <div class="navMenu__item">
+                                        <h5 class="title5 navMenu__item-btn">
+                                            Pro rodiny s dětmi
+                                        </h5>
+                                        <div class="navMenu__item-dropdown">
+                                            <a href="water-world.html">
+                                                Dětský vodní svět
+                                            </a>
+                                            <a href="#">
+                                                Dětské masáže
+                                            </a>
+                                            <a href="#">
+                                                Animační programy
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="header__inner-buttons">
+                        <div class="lang">
+                            <span>
+                                cz
+                            </span>
+                            <div class="lang__menu">
+                                <a href="#">EN</a>
+                                <a href="#">DE</a>
+                            </div>
+                        </div>
+                        <button class="header__inner-search" id="searchBtn">
+                            <span>
+                                <svg>
+                                    <use xlink:href="#searchIcon"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <a href="#" class="header__inner-call">
+                            <span>
+                                <svg>
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="#" class="button uniq">
+                            <span>
+                                <svg>
+                                    <use xlink:href="#bell"></use>
+                                </svg>
+                            </span>
+                            rezervovat
+                        </a>
+                        <p class="header__inner-text">
+                            MENU
+                        </p>
+                        <div class="burger" id="menuBtn">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end
+    =========================================== -->
+        <!-- hero start
+    =========================================== -->
+        <section class="hero dark">
+            <div class="hero__bg">
+                <img src="./images/gastronomy-bg.jpg" alt="">
+            </div>
+            <div class="auto__container">
+                <div class="hero__inner">
+                    <div class="hero__inner-title">
+                        <h1 class="title1 big">
+                            Gastronomie <br> v hotelu
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero end
+    =========================================== -->
+        <!-- intro start
+    =========================================== -->
+        <section class="intro sm">
+            <div class="auto__container">
+                <div class="intro__inner">
+                    <div class="intro__inner-title">
+                        <h6 class="title6">
+                            <a href="#">hotel frymburk</a>
+                            /
+                            <a href="#">
+                                restaurace
+                            </a>
+                        </h6>
+                        <h3 class="title3">
+                            V naší
+                            <i>restauraci a baru</i> na vás čekají chutná jídla z nejlepších surovin, vynikající vína a
+                            skvělá atmosféru. Přijďte ochutnat naše speciality a užít si příjemný večer s rodinou nebo
+                            přáteli!
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- intro end
+=========================================== -->
+        <!-- activity start
+      =========================================== -->
+        <section class="activity">
+            <div class="auto__container">
+                <div class="activity__inner">
+                    <div class="activity__inner-image">
+                        <img src="./images/gastronomy/1.jpg" alt="">
+                    </div>
+                    <div class="activity__inner-content">
+                        <h6 class="title6">
+                            pizza jako z Neapole
+                        </h6>
+                        <h3 class="title3">
+                            <strong>Italská pizza</strong> <i>z pece na dřevo</i>
+                        </h3>
+                        <p class="paragraph">
+                            Pro milovníky pizzy máme skvěluo zpráu - v naší pizzerii v Hotelu Frymburk pečeme klasickou
+                            italskou pizzu v peci na dřevo jako v Neapoli! Přijďte si k nám vychutnat tu nejlepší pizzu
+                            a užít si nezapomenutelný zážitek!
+                        </p>
+                        <div class="activity__inner-links sm">
+                            <a href="#">
+                                více o naší pizze
+                            </a>
+                            <a href="#">
+                                jídelní lístek
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- activity end
+  =========================================== -->
+        <!-- activity start
+      =========================================== -->
+        <section class="activity rev">
+            <div class="auto__container">
+                <div class="activity__inner">
+                    <div class="activity__inner-content">
+                        <h6 class="title6">
+                            lorem ipsum
+                        </h6>
+                        <h3 class="title3">
+                            <strong>Tender restaurace</strong>
+                        </h3>
+                        <p class="paragraph">
+                            Přijďte si k nám vychutnat lahodné masové speciality a grilovaná jídla z ohně. U nás najdete přátelskou a pohodovou atmosféru a sledujte, jak naši šéfkuchaři připravují vaše jídlo přímo před vámi. 
+                        </p>
+                        <a href="#">
+                            více informací
+                        </a>
+                    </div>
+                    <div class="activity__inner-image">
+                        <img src="./images/gastronomy/2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- activity end
+  =========================================== -->
+        <!-- activity start
+    =========================================== -->
+        <section class="activity">
+            <div class="auto__container">
+                <div class="activity__inner">
+                    <div class="activity__inner-image">
+                        <img src="./images/gastronomy/3.jpg" alt="">
+                    </div>
+                    <div class="activity__inner-content">
+                        <h6 class="title6">
+                            lorem ipsum
+                        </h6>
+                        <h3 class="title3">
+                            <strong>Lobby bar <i>a</i> kávarna</strong>
+                        </h3>
+                        <p class="paragraph">
+                            V našem lobby baru a kavárně si můžete dopřát si lákavý výběr nápojů a dezertů v příjemném prostředí. Vychutnejte si naše kávové speciality, koktejly a osvěžující nápoje, které jsou připraveny z těch nejčerstvějších surovin.
+                        </p>
+                        <a href="#">
+                            více informací
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- activity end
+      =========================================== -->
+        <!-- benefits start
+    =========================================== -->
+        <section class="benefits ex">
+            <div class="auto__container">
+                <div class="benefits__inner">
+                    <div class="benefits__inner-content">
+                        <h6 class="title6">
+                            získejte výhody s přímou rezervací
+                        </h6>
+                        <h2 class="title2">
+                            Ke každému pobytu <strong>získáte v ceně</strong>
+                        </h2>
+                    </div>
+                    <div class="benefits__inner-row">
+                        <div class="benefitsItem">
+                            <div class="benefitsItem__icon">
+                                <img src="./images/benefits/sauna.svg" alt="">
+                            </div>
+                            <p class="paragraph">
+                                Neomezený vstup do <br> <strong>saunového světa</strong>
+                            </p>
+                        </div>
+                        <div class="benefitsItem">
+                            <div class="benefitsItem__icon big">
+                                <img src="./images/benefits/pool.svg" alt="">
+                            </div>
+                            <p class="paragraph">
+                                Neomezený vstup <br>
+                                do <strong>aquaparku</strong>
+                            </p>
+                        </div>
+                        <div class="benefitsItem">
+                            <div class="benefitsItem__icon">
+                                <img src="./images/benefits/dress.svg" alt="">
+                            </div>
+                            <p class="paragraph">
+                                <strong>Zapůjčení</strong> ručníků, <br>
+                                županu a pantoflí
+                            </p>
+                        </div>
+                        <div class="benefitsItem">
+                            <div class="benefitsItem__icon">
+                                <img src="./images/benefits/faceMask.svg" alt="">
+                            </div>
+                            <p class="paragraph">
+                                <strong>Sleva 10%</strong> na <br>
+                                procedury a masáže
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- benefits end
+    =========================================== -->
+        <!-- stay start
+    =========================================== -->
+        <section class="stay">
+            <div class="auto__container">
+                <div class="stay__inner">
+                    <div class="stay__inner-title">
+                        <h6 class="title6">
+                            wellness pobyty
+                        </h6>
+                        <h2 class="title2">
+                            Zvýhodněné <strong>pobytové balíčky</strong>
+                        </h2>
+                        <p class="paragraph big">
+                            Máme pro Vás neodolatelný návrh - <i>wellness pobyty</i> s neomezeným vstupem do bazénu a
+                            saunového světa,
+                            včetně
+                            mnoha procedur, které Vás uvolní a nabijí energií. Nezapomenutelný zážitek plný relaxace a
+                            pohody začíná
+                            zde!
+                        </p>
+                    </div>
+                    <div class="stay__inner-row-wrapper">
+                        <div class="stay__inner-row">
+                            <div class="stayItem">
+                                <div class="stayItem__inner">
+                                    <div class="stayItem__image">
+                                        <img src="./images/stay/1.jpg" alt="">
+                                    </div>
+                                    <div class="stayItem__content">
+                                        <h6 class="title6">
+                                            Platnost od 09.01 do 31.3.2023
+                                        </h6>
+                                        <h4 class="title4">
+                                            Wellness pobyt pro dva
+                                            s polopenzí
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                skipas pro dva na Hochfichtu v ceně
+                                            </li>
+                                            <li>
+                                                sportovní masáž pro dva
+                                            </li>
+                                            <li>
+                                                polopenze pro dva v ceně
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="button secondary">
+                                            od 3290 Kč za osobu na 3 noci
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="#arrow-long"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stayItem">
+                                <div class="stayItem__inner">
+                                    <div class="stayItem__image">
+                                        <img src="./images/stay/2.jpg" alt="">
+                                    </div>
+                                    <div class="stayItem__content">
+                                        <h6 class="title6">
+                                            Platnost od 09.01 do 31.3.2023
+                                        </h6>
+                                        <h4 class="title4">
+                                            Wellness balíček Pro dva
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                skipas pro dva na Hochfichtu v ceně
+                                            </li>
+                                            <li>
+                                                sportovní masáž pro dva
+                                            </li>
+                                            <li>
+                                                polopenze pro dva v ceně
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="button secondary">
+                                            od 3290 Kč za osobu na 3 noci
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="#arrow-long"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stayItem">
+                                <div class="stayItem__inner">
+                                    <div class="stayItem__image">
+                                        <img src="./images/stay/3.jpg" alt="">
+                                    </div>
+                                    <div class="stayItem__content">
+                                        <h6 class="title6">
+                                            Platnost od 09.01 do 31.3.2023
+                                        </h6>
+                                        <h4 class="title4">
+                                            Lyžařský pobyt na Lipně
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                skipas pro dva na Hochfichtu v ceně
+                                            </li>
+                                            <li>
+                                                sportovní masáž pro dva
+                                            </li>
+                                            <li>
+                                                polopenze pro dva v ceně
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="button secondary">
+                                            od 3290 Kč za osobu na 3 noci
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="#arrow-long"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stayItem">
+                                <div class="stayItem__inner">
+                                    <div class="stayItem__image">
+                                        <img src="./images/stay/1.jpg" alt="">
+                                    </div>
+                                    <div class="stayItem__content">
+                                        <h6 class="title6">
+                                            Platnost od 09.01 do 31.3.2023
+                                        </h6>
+                                        <h4 class="title4">
+                                            Wellness pobyt pro dva
+                                            s polopenzí
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                skipas pro dva na Hochfichtu v ceně
+                                            </li>
+                                            <li>
+                                                sportovní masáž pro dva
+                                            </li>
+                                            <li>
+                                                polopenze pro dva v ceně
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="button secondary">
+                                            od 3290 Kč za osobu na 3 noci
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="#arrow-long"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrows">
+                            <button type="button" class="prev">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </button type="button">
+                            <button type="button" class="next">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </button type="button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- stay end
+    =========================================== -->
+        <!-- news start
+    =========================================== -->
+        <section class="news">
+            <div class="auto__container">
+                <div class="news__inner">
+                    <div class="news__inner-title">
+                        <h6 class="title6">
+                            co je u nás nového?
+                        </h6>
+                        <h2 class="title2">
+                            <strong>Novinky, zajímavosti a akce</strong> z hotelu
+                        </h2>
+                        <p class="paragraph big">
+                            Jste připraveni nechat se rozmazlovat? Ve Wellness Hotelu Frymburk posouváme hýčkání na
+                            zcela novou
+                            úroveň. <br> Tak se pohodlně usaďte, relaxujte a zbytek nechte na nás.
+                        </p>
+                    </div>
+                    <div class="news__inner-row-wrapper">
+                        <div class="news__inner-row">
+                            <div class="newsItem">
+                                <div class="newsItem__inner">
+                                    <a href="#" class="newsItem__image">
+                                        <img src="./images/news/1.jpg" alt="">
+                                    </a>
+                                    <div class="newsItem__content">
+                                        <h6 class="title6">
+                                            novinky ∙ 27.2.2023
+                                        </h6>
+                                        <h5 class="title5">
+                                            <a href="#">
+                                                Slavnostní znovuotevření venkovních bazénů se slevou 30%
+                                            </a>
+                                        </h5>
+                                        <p class="paragraph sm">
+                                            Přijďte se k nám do Wellness Hotelu Frymburk uvolnit a zrelaxovat, v týdnu
+                                            či o víkendu na Vás
+                                            čekají saunéři.
+                                        </p>
+                                        <a href="#">
+                                            pokračování článku
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsItem">
+                                <div class="newsItem__inner">
+                                    <a href="#" class="newsItem__image">
+                                        <img src="./images/news/2.jpg" alt="">
+                                    </a>
+                                    <div class="newsItem__content">
+                                        <h6 class="title6">
+                                            akce v hotelu ∙ 21.2.2023
+                                        </h6>
+                                        <h5 class="title5">
+                                            <a href="#">
+                                                Dne 25.5.2023 proběhne další Ceremoniální saunová noc
+                                            </a>
+                                        </h5>
+                                        <p class="paragraph sm">
+                                            Přijďte se k nám do Wellness Hotelu Frymburk uvolnit a zrelaxovat, v týdnu
+                                            či o víkendu na Vás
+                                            čekají saunéři.
+                                        </p>
+                                        <a href="#">
+                                            pokračování článku
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsItem">
+                                <div class="newsItem__inner">
+                                    <a href="#" class="newsItem__image">
+                                        <img src="./images/news/3.jpg" alt="">
+                                    </a>
+                                    <div class="newsItem__content">
+                                        <h6 class="title6">
+                                            výhodné nabídky ∙ 21.2.2023
+                                        </h6>
+                                        <h5 class="title5">
+                                            <a href="#">
+                                                Využijte naší speciální slevu 20% na Velikonoční pobyty 2023
+                                            </a>
+                                        </h5>
+                                        <p class="paragraph sm">
+                                            Přijďte se k nám do Wellness Hotelu Frymburk uvolnit a zrelaxovat, v týdnu
+                                            či o víkendu na Vás
+                                            čekají saunéři.
+                                        </p>
+                                        <a href="#">
+                                            pokračování článku
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrows">
+                            <button type="button" class="prev">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </button type="button">
+                            <button type="button" class="next">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </button type="button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- news end
+    =========================================== -->
+        <!-- follow start
+    =========================================== -->
+        <section class="follow">
+            <div class="auto__container">
+                <div class="follow__inner">
+                    <div class="follow__inner-title">
+                        <h6 class="title6">
+                            každodenní inspirace z našeho hotelu
+                        </h6>
+                        <h2 class="title2">
+                            <i>Sledujte nás</i> <strong> na Instagramu a nechte se inspirovat</strong>
+                        </h2>
+                    </div>
+                    <div class="follow__inner-row">
+                        <a href="#" class="followItem">
+                            <div class="followItem__image">
+                                <img src="./images/follow/1.jpg" alt="">
+                            </div>
+                            <div class="followItem__content">
+                                <div class="followItem__content-icon">
+                                    <img src="./images/icons/social/instagram.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="followItem">
+                            <div class="followItem__image">
+                                <img src="./images/follow/2.jpg" alt="">
+                            </div>
+                            <div class="followItem__content">
+                                <div class="followItem__content-icon">
+                                    <img src="./images/icons/social/instagram.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="followItem">
+                            <div class="followItem__image">
+                                <img src="./images/follow/3.jpg" alt="">
+                            </div>
+                            <div class="followItem__content">
+                                <div class="followItem__content-icon">
+                                    <img src="./images/icons/social/instagram.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="followItem">
+                            <div class="followItem__image">
+                                <img src="./images/follow/4.jpg" alt="">
+                            </div>
+                            <div class="followItem__content">
+                                <div class="followItem__content-icon">
+                                    <img src="./images/icons/social/instagram.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- follow end
+    =========================================== -->
+        <!-- location start
+    =========================================== -->
+        <section class="location">
+            <div class="auto__container">
+                <div class="location__inner">
+                    <div class="location__inner-content">
+                        <h6 class="title6">
+                            Poloha a příjezd do hotelu
+                        </h6>
+                        <h2 class="title2">
+                            Jak <strong>se k nám dostanete?</strong>
+                        </h2>
+                        <p class="paragraph big">
+                            Zasloužený relax na Lipně je na dosah. Do našeho hotelu se pohodlně dostanete nejen autem,
+                            ale také <a href="#">autobusem</a> nebo <a href="#">vlakem</a>.
+                        </p>
+                        <p class="paragraph sm">
+                            Wellness Hotel Frymburk <br>
+                            Frymburk 140, <br>
+                            382 79 FRYMBURK
+                        </p>
+                        <div class="location__inner-buttons">
+                            <a href="#" class="button light">
+                                zobrazit mapu
+                                <span>
+                                    <svg>
+                                        <use xlink:href="#arrow-long"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="button light">
+                                bližší informace k příjezdu
+                                <span>
+                                    <svg>
+                                        <use xlink:href="#arrow-long"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="location__inner-map">
+                        <img src="./images/map.png" alt="">
+                        <div class="locationItem__wrapper">
+                            <div class="locationItem">
+                                <h6 class="title6">
+                                    praha
+                                </h6>
+                                <p class="paragraph">
+                                    2,5 hodiny
+                                </p>
+                            </div>
+                            <div class="locationItem">
+                                <h6 class="title6">
+                                    plzeň
+                                </h6>
+                                <p class="paragraph">
+                                    180 km
+                                </p>
+                            </div>
+                            <div class="locationItem">
+                                <h6 class="title6">
+                                    české budějovice
+                                </h6>
+                                <p class="paragraph">
+                                    40 minut
+                                </p>
+                            </div>
+                            <div class="locationItem">
+                                <h6 class="title6">
+                                    brno
+                                </h6>
+                                <p class="paragraph">
+                                    3,5 hodiny
+                                </p>
+                            </div>
+                            <div class="locationItem main">
+                                <h6 class="title6">
+                                    Wellness hotel <br> frymburk
+                                </h6>
+                                <span></span>
+                            </div>
+                            <div class="locationItem">
+                                <h6 class="title6">
+                                    Passau (DE)
+                                </h6>
+                                <p class="paragraph">
+                                    70 km
+                                </p>
+                            </div>
+                            <div class="locationItem">
+                                <h6 class="title6">
+                                    rohrbach (AT)
+                                </h6>
+                                <p class="paragraph">
+                                    40 min
+                                </p>
+                            </div>
+                            <div class="locationItem">
+                                <h6 class="title6">
+                                    Linz (AT)
+                                </h6>
+                                <p class="paragraph">
+                                    55 min
+                                </p>
+                            </div>
+                            <div class="locationItem">
+                                <h6 class="title6">
+                                    freistadt (AT)
+                                </h6>
+                                <p class="paragraph">
+                                    40 min
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- location end
+    =========================================== -->
+        <!-- newsletter start
+    =========================================== -->
+        <section class="newsletter">
+            <div class="auto__container">
+                <div class="newsletter__inner">
+                    <div class="newsletter__inner-title">
+                        <h6 class="title6">
+                            odemkněte exluzivní výhody a nabídky
+                        </h6>
+                        <h2 class="title2">
+                            Přihlaste se k odběru našeho newsletteru
+                        </h2>
+                        <p class="paragraph big">
+                            Nemáme červený koberec, ale když se přihlásíte k <i>odběru našeho newsletteru</i> ,
+                            rozvineme ho pro vás.
+                            Tak exkluzivní jsou naše speciální nabídky pouze pro vás.
+                        </p>
+                    </div>
+                    <form action="" class="newsletter__inner-form">
+                        <div class="input">
+                            <input type="text" placeholder="vaše jméno">
+                        </div>
+                        <div class="input">
+                            <input type="email" placeholder="váš email">
+                        </div>
+                        <button type="submit" class="button light">
+                            přihlásit odběr
+                            <span>
+                                <svg>
+                                    <use xlink:href="#arrow-long"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
+                    <p class="paragraph">
+                        Přihlašením souhlasíte se zasláním obchodních sdělení a se
+                        <a href="#">zpracováním osobních údajů.</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- newsletter end
+    =========================================== -->
+        <!-- contact start
+    =========================================== -->
+        <section class="contact">
+            <div class="auto__container">
+                <div class="contact__inner">
+                    <a href="tel:+420 380 300 330" class="contactItem">
+                        <div class="contactItem__icon big">
+                            <img src="./images/icons/bell.svg" alt="">
+                        </div>
+                        <div class="contactItem__content">
+                            <h6 class="title6">
+                                Hotelová receppce
+                            </h6>
+                            <h5 class="title5">
+                                +420 380 300 330
+                            </h5>
+                        </div>
+                    </a>
+                    <a href="tel:+420 380 300 330" class="contactItem">
+                        <div class="contactItem__icon">
+                            <img src="./images/icons/phone.svg" alt="">
+                        </div>
+                        <div class="contactItem__content">
+                            <h6 class="title6">
+                                wellness receppce
+                            </h6>
+                            <h5 class="title5">
+                                +420 380 300 330
+                            </h5>
+                        </div>
+                    </a>
+                    <a href="mailto:info@hotelfrymburk.cz" class="contactItem">
+                        <div class="contactItem__icon ex">
+                            <img src="./images/icons/mail.svg" alt="">
+                        </div>
+                        <div class="contactItem__content">
+                            <h6 class="title6">
+                                napište nám
+                            </h6>
+                            <h5 class="title5">
+                                info@hotelfrymburk.cz
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- contact end
+    =========================================== -->
+        <!-- footer start
+    =========================================== -->
+        <footer class="footer">
+            <div class="auto__container">
+                <div class="footer__inner">
+                    <div class="footer__inner-col">
+                        <div class="footer__inner-logo">
+                            <img src="./images/footer-logo.png" alt="">
+                        </div>
+                        <p class="paragraph sm">
+                            Frymburk 140, 38279 <br>
+                            Česká republika <br>
+                            <a href="#">
+                                Ukázat na mapě
+                            </a>
+                        </p>
+                    </div>
+                    <div class="footer__inner-col">
+                        <h5 class="title5">
+                            Rychlé odkazy
+                        </h5>
+                        <a href="#">
+                            Ubytování
+                        </a>
+                        <a href="#">
+                            Wellness & Spa
+                        </a>
+                        <a href="#">
+                            Aquapark
+                        </a>
+                        <a href="#">
+                            Svět pod hladinou
+                        </a>
+                        <a href="#">
+                            Kongresy a eventy
+                        </a>
+                        <a href="#">
+                            Pobyty
+                        </a>
+                    </div>
+                    <div class="footer__inner-col">
+                        <h5 class="title5">
+                            O nás
+                        </h5>
+                        <a href="#">
+                            Nabídka práce
+                        </a>
+                        <a href="#">
+                            Otevírací doba
+                        </a>
+                        <a href="#">
+                            Newsletter
+                        </a>
+                        <a href="#">
+                            Partneři
+                        </a>
+                        <a href="#">
+                            Moje rezervace
+                        </a>
+                        <a href="#">
+                            Kontakty
+                        </a>
+                    </div>
+                    <div class="footer__inner-col">
+                        <h5 class="title5">
+                            Sledujte nás
+                        </h5>
+                        <div class="footer__inner-social">
+                            <a href="#">
+                                <img src="./images/icons/social/instagram.png" alt="">
+                            </a>
+                            <a href="#" class="thin">
+                                <img src="./images/icons/social/facebook.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/social/youtube.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copy">
+            <div class="auto__container">
+                <div class="copy__inner">
+                    <div class="copy__inner-text">
+                        <p class="paragraph">
+                            © 2023 HotelFrymburk.cz. Všechna práva vyhrazena. Vytvořilo Alcedo Media.
+                        </p>
+                        <div class="copy__inner-links">
+                            <a href="#">
+                                Ochrana osobních údajů
+                            </a>
+                            <a href="#">
+                                <b>•</b> Prohlášení o Cookies
+                            </a>
+                            <a href="#">
+                                <b>•</b> Mapa webu
+                            </a>
+                        </div>
+                    </div>
+                    <div class="copy__inner-lang">
+                        <a href="#" class="active">
+                            cz
+                        </a>
+                        <hr>
+                        <a href="#">
+                            DE
+                        </a>
+                        <hr>
+                        <a href="#">
+                            EN
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer end
+    =========================================== -->
+    </main>
+    <!-- Sprites
+    =========================================== -->
+    <svg style="display: none">
+        <symbol id="arrow-right" viewBox="0 96 960 960">
+            <g>
+                <path
+                    d="m480 880.614-42.768-42.153 232.462-232.462H175.386v-59.998h494.308L437.232 313.539 480 271.386 784.614 576 480 880.614Z" />
+            </g>
+        </symbol>
+        <symbol id="arrow-long" viewBox="0 96 960 960">
+            <g>
+                <path
+                    d="m561.923 802.153-42.153-43.384 152.77-152.77H171.924v-59.998H672.54l-152.77-152.77 42.153-43.384L788.076 576 561.923 802.153Z" />
+            </g>
+        </symbol>
+        <symbol id="searchIcon" viewBox="0 96 960 960">
+            <g>
+                <path
+                    d="M781.692 919.076 530.461 667.845q-30 24.769-69 38.769t-80.692 14q-102.55 0-173.582-71.014t-71.032-173.537q0-102.524 71.014-173.601 71.014-71.076 173.538-71.076 102.523 0 173.6 71.032T625.384 476q0 42.846-14.385 81.846-14.385 39-38.385 67.846l251.231 251.231-42.153 42.153Zm-400.923-258.46q77.308 0 130.962-53.654Q565.385 553.308 565.385 476q0-77.308-53.654-130.962-53.654-53.654-130.962-53.654-77.308 0-130.962 53.654Q196.154 398.692 196.154 476q0 77.308 53.653 130.962 53.654 53.654 130.962 53.654Z" />
+            </g>
+        </symbol>
+        <symbol id="bell" viewBox="0 0 85 85">
+            <g>
+                <g>
+                    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+                        stroke-width="2.5" x1="17.793" x2="67.208" y1="49.275" y2="49.275" />
+                    <line fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2.5" x1="42.5"
+                        x2="42.5" y1="27.057" y2="22.39" />
+                    <g>
+                        <g>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+                                stroke-width="2.5" x1="62.311" x2="68.764" y1="26.871" y2="21.934" />
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+                                stroke-width="2.5" x1="68.152" x2="75.51" y1="35.323" y2="31.876" />
+                        </g>
+                        <g>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+                                stroke-width="2.5" x1="22.689" x2="16.236" y1="26.871" y2="21.934" />
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+                                stroke-width="2.5" x1="16.848" x2="9.491" y1="35.323" y2="31.876" />
+                        </g>
+                    </g>
+                    <g>
+                        <path
+                            d="     M68.779,66.394v-5.577c-4-1.397-4-5.418-4-5.418H20.221c0,0,0,4.021-4,5.418v5.577H68.779z"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-miterlimit="10" stroke-width="2.5" />
+                    </g>
+                    <path
+                        d="M64.707,49.131    c-1.666-1.846-2.183-3.607-2.356-4.668c-1.558-9.495-6.845-16.738-19.851-16.738c-13.005,0-18.292,7.243-19.85,16.738    c-0.174,1.061-0.69,2.822-2.356,4.668"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+                        stroke-width="2.5" />
+                    <path d="M38.374,33.73    c-4.025,0.728-6.749,2.665-8.433,6.032" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5" />
+                    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-miterlimit="10" stroke-width="2.5" x1="68.236" x2="34.208" y1="60.88" y2="60.88" />
+                    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-miterlimit="10" stroke-width="2.5" x1="25.874" x2="16.875" y1="60.88" y2="60.88" />
+                </g>
+                <path
+                    d="   M37.567,22.255c0,0,0-0.097,0-1.357s1.275-2.292,2.835-2.292H44.6c1.559,0,2.834,1.031,2.834,2.292s0,1.357,0,1.357"
+                    fill="none" stroke="CurrentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-miterlimit="10" stroke-width="2.5" />
+            </g>
+        </symbol>
+        <symbol id="phone" viewBox="0 0 85 85">
+            <path d="M45.301,26.104     c3.199,0.076,6.383,1.326,8.844,3.752c2.48,2.447,3.777,5.645,3.881,8.874"
+                fill="none" stroke="currentColor" stroke-width="3.5" />
+            <path d="M45.547,18.86     c4.957,0.136,9.877,2.079,13.688,5.835c3.807,3.754,5.818,8.64,6.027,13.591"
+                fill="none" stroke="currentColor" stroke-width="3.5" />
+
+            <path d="M64.701,65.86l-10.947-7.339" fill="none" stroke="currentColor" stroke-width="3.5" />
+            <path
+                d="M26.326,31.296l-7.271-10.917    c-0.476,0.427-0.773,0.707-0.773,0.707c-2.731,2.433-2.124,4.56-2.124,4.56C18.002,38.65,31.692,51.18,32.738,52.27    c1.413,1.312,13.641,14.723,26.648,16.553c0,0,2.127,0.605,4.559-2.13l0.756-0.832c0.936-1.235,4.146-5.39,4.176-6.084    c0,0,0.305-1.364-1.293-2.503l-9.574-6.375c0,0-1.672-1.52-4.025-0.227l-5.771,3.193c0,0-5.791-4.596-9.001-8.076    c-3.483-3.205-8.087-8.99-8.087-8.99l3.188-5.773C35.603,28.67,34.083,27,34.083,27l-6.388-9.566    c-1.139-1.593-2.506-1.29-2.506-1.29c-0.705,0.032-1.968,0.844-3.222,1.802"
+                fill="none" stroke="currentColor" stroke-width="3.5" />
+        </symbol>
+        <symbol id="minus" viewBox="0 96 960 960" fill="currentColor">
+            <path d="M200 616v-80h560v80H200Z" />
+        </symbol>
+        <symbol id="add" viewBox="0 96 960 960" fill="currentColor">
+            <path d="M440 856V616H200v-80h240V296h80v240h240v80H520v240h-80Z" />
+        </symbol>
+        <symbol id="chevronBot" viewBox="0 96 960 960" fill="currentColor">
+            <path d="M480 711 240 471l56-56 184 184 184-184 56 56-240 240Z" />
+        </symbol>
+    </svg>
+    <!-- js
+    =========================================== -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

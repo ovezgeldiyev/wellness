@@ -67,24 +67,6 @@
         }
     }
 }
-// 1380px
-@mixin follow-xxxlg-xxxxlg {
-    .follow {
-
-    }
-}
-// 1250px
-@mixin follow-xlg-xxlg-extra {
-    .follow {
-
-    }
-}
-// 1180px
-@mixin follow-xlg-xxlg {
-    .follow {
-
-    }
-}
 // 1024px
 @mixin follow-lg-xlg {
     .follow {
@@ -116,12 +98,6 @@
         }
     }
 }
-// 750px
-@mixin follow-sm-md {
-    .follow {
- 
-    }
-}
 // 650px
 @mixin follow-sm-md-extra {
     .follow {
@@ -149,17 +125,5 @@
                 }
             }
         }
-    }
-}
-// 540px
-@mixin follow-xsm-sm {
-    .follow {
-
-    }
-}
-// 440px
-@mixin follow-xxsm-xsm {
-    .follow {
-
     }
 }

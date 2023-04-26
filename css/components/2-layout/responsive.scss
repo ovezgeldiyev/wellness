@@ -1,309 +1,370 @@
 // 1840px
 @include xxxxxlg-xxxxxxlg {
-    @include activity-xxxxxlg-xxxxxxlg;
+  @include activity-xxxxxlg-xxxxxxlg;
 }
 // 1720px
 @include xxxxxlg-xxxxxxlg-extra {
-    @include activity-xxxxxlg-xxxxxxlg-extra;
+  @include activity-xxxxxlg-xxxxxxlg-extra;
 }
 // 1600px
 @include xxxxlg-xxxxxlg {
-    .arrows {
-        button {
-            right: 0;
-            transform: translate(50%, -50%);
-        }
-        .prev {
-            left: 0;
-            transform: translate(-50%, -50%);
-        }
+  .arrows {
+    button {
+      right: 0;
+      transform: translate(50%, -50%);
     }
-    .button {
-        &.uniq {
-            padding: 12px 20px;
-        }
+    .prev {
+      left: 0;
+      transform: translate(-50%, -50%);
     }
-    @include header-xxxxlg-xxxxxlg;
-    @include nav-xxxxlg-xxxxxlg;
-    @include activity-xxxxlg-xxxxxlg;
+  }
+  .button {
+    &.uniq {
+      padding: 12px 20px;
+    }
+  }
+  @include header-xxxxlg-xxxxxlg;
+  @include nav-xxxxlg-xxxxxlg;
+  @include activity-xxxxlg-xxxxxlg;
 }
 // 1500px
 @include xxxxlg-xxxxxlg-extra {
-    @include activity-xxxxlg-xxxxxlg-extra;
+  @include activity-xxxxlg-xxxxxlg-extra;
 }
 // 1380px
 @include xxxlg-xxxxlg {
-    .main {
-        padding: 0;
+  .main {
+    padding: 0;
+  }
+  .title2 {
+    font-size: 58px;
+    line-height: 68px;
+    &.ex {
+      font-size: 56px;
+      line-height: 66px;
     }
-    .title2 {
-        font-size: 58px;
-        line-height: 68px;
+  }
+  .title3 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  .paragraph {
+    font-size: 22px;
+    line-height: 28px;
+    &.big {
+      font-size: 24px;
+      line-height: 32px;
     }
-    .title3 {
-        font-size: 44px;
-        line-height: 54px;
+  }
+  .button {
+    &.uniq {
+      padding: 8px 10px;
+      font-size: 11px;
+      span {
+        width: 20px;
+        height: 20px;
+      }
     }
-    .paragraph {
-        font-size: 22px;
-        line-height: 28px;
-        &.big {
-            font-size: 24px;
-            line-height: 32px;
-        }
-    }
-    .button {
-        &.uniq {
-            padding: 8px 10px;
-            font-size: 11px;
-            span {
-                width: 20px;
-                height: 20px
-            }
-        }
-    }
-    @include header-xxxlg-xxxxlg;
-    @include nav-xxxlg-xxxxlg;
-    @include hero-xxxlg-xxxxlg;
-    @include HeroCalendar-xxxlg-xxxxlg;
-    @include activity-xxxlg-xxxxlg;
-    @include location-xxxlg-xxxxlg;
-
+  }
+  @include header-xxxlg-xxxxlg;
+  @include nav-xxxlg-xxxxlg;
+  @include hero-xxxlg-xxxxlg;
+  @include HeroCalendar-xxxlg-xxxxlg;
+  @include activity-xxxlg-xxxxlg;
+  @include location-xxxlg-xxxxlg;
+  @include contact-xxxlg-xxxxlg;
 }
 // 1250px
 @include xlg-xxlg-extra {
-    @include hero-xlg-xxlg-extra;
-    @include stay-xlg-xxlg-extra;
-    @include news-xlg-xxlg-extra;
-
+  @include hero-xlg-xxlg-extra;
+  @include stay-xlg-xxlg-extra;
+  @include news-xlg-xxlg-extra;
 }
 // 1180px
 @include xlg-xxlg {
-    .title2 {
-        font-size: 53px;
-        line-height: 60px;
+  .title2 {
+    font-size: 53px;
+    line-height: 60px;
+    &.ex {
+      font-size: 50px;
+      line-height: 57px;
     }
-    .title3 {
-        font-size: 40px;
-        line-height: 49px;
-    }
-    .title4 {
-        font-size: 28px;
-        line-height: 34px;
-    }
-    .title5 {
-        font-size: 24px;
-        line-height: 30px;
-    }
-    @include nav-xlg-xxlg;
-    @include header-xlg-xxlg;
-    @include hero-xlg-xxlg;
-    @include HeroCalendar-xlg-xxlg;
-    @include offer-xlg-xxlg;
-    @include rooms-xlg-xxlg;
-    @include benefits-xlg-xxlg;
-    @include stay-xlg-xxlg;
-    @include activity-xlg-xxlg;
-    @include location-xlg-xxlg;
-    @include newsletter-xlg-xxlg;
-    @include contact-xlg-xxlg;
-    @include footer-xlg-xxlg;
+  }
+  .title3 {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .title4 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .title5 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  @include nav-xlg-xxlg;
+  @include header-xlg-xxlg;
+  @include hero-xlg-xxlg;
+  @include HeroCalendar-xlg-xxlg;
+  @include offer-xlg-xxlg;
+  @include rooms-xlg-xxlg;
+  @include benefits-xlg-xxlg;
+  @include stay-xlg-xxlg;
+  @include activity-xlg-xxlg;
+  @include location-xlg-xxlg;
+  @include newsletter-xlg-xxlg;
+  @include contact-xlg-xxlg;
+  @include footer-xlg-xxlg;
 
-
+  @include intro-xlg-xxlg;
+  @include booking-xlg-xxlg;
 }
 // 1024px
 @include lg-xlg {
-    ::-webkit-scrollbar{
-        display: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .title2 {
+    font-size: 45px;
+    line-height: 50px;
+    &.ex {
+      font-size: 45px;
+      line-height: 50px;
     }
-    .title2 {
-        font-size: 45px;
-        line-height: 50px;
+  }
+  .title3 {
+    font-size: 35px;
+    line-height: 44px;
+  }
+  .title6 {
+    margin-bottom: 10px;
+  }
+  .paragraph {
+    font-size: 20px;
+    line-height: 26px;
+    &.big {
+      font-size: 22px;
+      line-height: 30px;
     }
-    .title3 {
-        font-size: 35px;
-        line-height: 44px;
-    }
-    .title6 {
-        margin-bottom: 10px;
-    }
-    .paragraph {
-        font-size: 20px;
-        line-height: 26px;
-        &.big {
-            font-size: 22px;
-            line-height: 30px;
-        }
-    }
-    @include header-lg-xlg;
-    @include nav-lg-xlg;
-    @include hero-lg-xlg;
-    @include HeroCalendar-lg-xlg;
-    @include rooms-lg-xlg;
-    @include benefits-lg-xlg;
-    @include stay-lg-xlg;
-    @include news-lg-xlg;
-    @include activity-lg-xlg;
-    @include follow-lg-xlg;
-    @include location-lg-xlg;
-    @include contact-lg-xlg;
-    @include footer-lg-xlg;
+  }
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include hero-lg-xlg;
+  @include HeroCalendar-lg-xlg;
+  @include rooms-lg-xlg;
+  @include benefits-lg-xlg;
+  @include stay-lg-xlg;
+  @include news-lg-xlg;
+  @include activity-lg-xlg;
+  @include follow-lg-xlg;
+  @include location-lg-xlg;
+  @include contact-lg-xlg;
+  @include footer-lg-xlg;
 
+  @include gallery-lg-xlg;
+  @include article-lg-xlg;
 }
 // 930px
 @include md-lg {
-    .title1 {
-        font-size: 90px;
-        line-height: 95px;
+  .title1 {
+    font-size: 90px;
+    line-height: 95px;
+    &.big {
+      font-size: 95px;
     }
-    .title2 {
-        &.sm {
-            font-size: 46px;
-            line-height: 52px;
-        }
+  }
+  .title2 {
+    &.sm {
+      font-size: 46px;
+      line-height: 52px;
     }
-    .title3 {
-        font-size: 30px;
-        line-height: 38px;
+  }
+  .title3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .checkbox {
+    span {
+      font-size: 14px;
+      line-height: 20px;
+      padding-left: 26px;
     }
-    @include hero-md-lg;
-    @include HeroCalendar-md-lg;
-    @include offer-md-lg;
-    @include benefits-md-lg;
-    @include stay-md-lg;
-    @include news-md-lg;
-    @include activity-md-lg;
-    @include follow-md-lg;
-    @include newsletter-md-lg;
-    @include contact-md-lg;
-    @include footer-md-lg;
+    label {
+      width: 18px;
+      height: 18px;
+      &::before {
+        top: 2px;
+        left: 5px;
+      }
+    }
+  }
+  @include hero-md-lg;
+  @include HeroCalendar-md-lg;
+  @include offer-md-lg;
+  @include benefits-md-lg;
+  @include stay-md-lg;
+  @include news-md-lg;
+  @include activity-md-lg;
+  @include follow-md-lg;
+  @include newsletter-md-lg;
+  @include contact-md-lg;
+  @include footer-md-lg;
 
+  @include intro-md-lg;
+  @include article-md-lg;
+  @include booking-md-lg;
 }
 // 750px
 @include sm-md {
-    .arrows {
-        display: none;
-    }
-    @include hero-sm-md;
-    @include offer-sm-md;
-    @include rooms-sm-md;
-    @include stay-sm-md;
-    @include news-sm-md;
-    @include newsletter-sm-md;
-    @include contact-sm-md;
-    @include footer-sm-md;
+  .arrows {
+    display: none;
+  }
+  @include hero-sm-md;
+  @include offer-sm-md;
+  @include rooms-sm-md;
+  @include stay-sm-md;
+  @include news-sm-md;
+  @include newsletter-sm-md;
+  @include contact-sm-md;
+  @include benefits-sm-md;
 
+  @include intro-sm-md;
+  @include gallery-sm-md;
+  @include article-sm-md;
+  @include booking-sm-md;
 }
 // 650px
 @include sm-md-extra {
-    .auto__container {
-        padding: 0 30px;
+  .auto__container {
+    padding: 0 30px;
+  }
+  .title1 {
+    font-size: 80px;
+    line-height: 100%;
+    &.big {
+      font-size: 85px;
     }
-    .title1 {
-        font-size: 80px;
-        line-height: 100%;
+  }
+  .title2 {
+    font-size: 40px;
+    line-height: 45px;
+    &.ex {
+      font-size: 40px;
+      line-height: 45px;
     }
-    .title2 {
-        font-size: 40px;
-        line-height: 45px;
-        &.sm {
-            font-size: 40px;
-            line-height: 45px;
-        }
+    &.sm {
+      font-size: 40px;
+      line-height: 45px;
     }
-    .title3 {
-        font-size: 26px;
-        line-height: 34px;
-    }
-    @include header-sm-md-extra;
-    @include nav-sm-md-extra;
-    @include hero-sm-md-extra;
-    @include HeroCalendar-sm-md-extra;
-    @include offer-sm-md-extra;
-    @include benefits-sm-md-extra;
-    @include rooms-sm-md-extra;
-    @include stay-sm-md-extra;
-    @include news-sm-md-extra;
-    @include follow-sm-md-extra;
-    @include footer-sm-md-extra;
-    @include location-sm-md-extra;
+  }
+  .title3 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  @include header-sm-md-extra;
+  @include nav-sm-md-extra;
+  @include hero-sm-md-extra;
+  @include HeroCalendar-sm-md-extra;
+  @include offer-sm-md-extra;
+  @include benefits-sm-md-extra;
+  @include rooms-sm-md-extra;
+  @include stay-sm-md-extra;
+  @include news-sm-md-extra;
+  @include follow-sm-md-extra;
+  @include footer-sm-md-extra;
+  @include location-sm-md-extra;
 
+  @include gallery-sm-md-extra;
+  @include article-sm-md-extra;
 }
 // 540px
-@include xsm-sm  {
-    .title1 {
-        font-size: 65px;
+@include xsm-sm {
+  .title1 {
+    font-size: 65px;
+    &.big {
+      font-size: 70px;
     }
-    .title2 {
-        &.sm {
-            font-size: 33px;
-            line-height: 38px;
-        }
+  }
+  .title2 {
+    &.sm {
+      font-size: 33px;
+      line-height: 38px;
     }
-    .title3 {
-        font-size: 22px;
-        line-height: 30px;
+  }
+  .title3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .title6 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .paragraph {
+    font-size: 17px;
+    line-height: 23px;
+    &.big {
+      font-size: 20px;
+      line-height: 26px;
     }
-    .title6 {
-        font-size: 12px;
-        line-height: 15px;
-    }
-    .paragraph {
-        font-size: 17px;
-        line-height: 23px;
-        &.big {
-            font-size: 20px;
-            line-height: 26px;
-        }
-    }
-    @include hero-xsm-sm;
-    @include HeroCalendar-xsm-sm;
-    @include offer-xsm-sm;
-    @include benefits-xsm-sm;
-    @include rooms-xsm-sm;
-    @include stay-xsm-sm;
-    @include news-xsm-sm;
-    @include activity-xsm-sm;
-    @include location-xsm-sm;
-    @include newsletter-xsm-sm;
+  }
+  @include hero-xsm-sm;
+  @include HeroCalendar-xsm-sm;
+  @include offer-xsm-sm;
+  @include benefits-xsm-sm;
+  @include rooms-xsm-sm;
+  @include stay-xsm-sm;
+  @include news-xsm-sm;
+  @include activity-xsm-sm;
+  @include location-xsm-sm;
+  @include newsletter-xsm-sm;
+  @include contact-xsm-sm;
 
+  @include intro-xsm-sm;
+  @include article-xsm-sm;
 }
 // 440px
-@include xxsm-xsm  {
-    .auto__container {
-        padding: 0 20px;
+@include xxsm-xsm {
+  .auto__container {
+    padding: 0 20px;
+  }
+  .title1 {
+    font-size: 55px;
+    &.big {
+      font-size: 57px;
     }
-    .title1 {
-        font-size: 55px;
+  }
+  .title2 {
+    &.sm {
+      font-size: 28px;
+      line-height: 30px;
     }
-    .title2 {
-        &.sm {
-            font-size: 28px;
-            line-height: 30px;
-        }
-    }
-    @include header-xxsm-xsm;
-    @include nav-xxsm-xsm;
-    @include hero-xxsm-xsm;
-    @include offer-xxsm-xsm;
-    @include benefits-xxsm-xsm;
-    @include rooms-xxsm-xsm;
-    @include stay-xxsm-xsm;
-    @include news-xxsm-xsm;
-    @include activity-xxsm-xsm;
+  }
+  @include header-xxsm-xsm;
+  @include nav-xxsm-xsm;
+  @include hero-xxsm-xsm;
+  @include offer-xxsm-xsm;
+  @include benefits-xxsm-xsm;
+  @include rooms-xxsm-xsm;
+  @include stay-xxsm-xsm;
+  @include news-xxsm-xsm;
+  @include activity-xxsm-xsm;
+  @include contact-xxsm-xsm;
 
+  @include article-xxsm-xsm;
+  @include booking-xxsm-xsm;
 }
 // 390px
-@include xxxsm-xxsm  {
-    .title1 {
-        font-size: 45px;
+@include xxxsm-xxsm {
+  .title1 {
+    font-size: 45px;
+    &.big {
+      font-size: 50px;
     }
-    .title2 {
-        &.sm {
-            font-size: 22px;
-            line-height: 26px;
-        }
+  }
+  .title2 {
+    &.sm {
+      font-size: 22px;
+      line-height: 26px;
     }
-    // @include hero-xxxsm-xxsm;
+  }
 }
-

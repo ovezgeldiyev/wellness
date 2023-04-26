@@ -20,6 +20,9 @@ window.addEventListener("click", function (e) {
 
 // menu end
 const navMenu = document.getElementById("navMenu");
+const searchMenu = document.getElementById("searchMenu");
+const headerMenu = document.getElementById("headerMenu");
+
 // scroll start
 function scrollFunc() {
   if (window.pageYOffset >= 60) {
@@ -31,6 +34,9 @@ function scrollFunc() {
     if (navMenu.classList.contains("active")) {
       header.classList.add("active");
     }
+    if (searchMenu.classList.contains("active")) {
+      header.classList.add("active");
+    }
   }
 }
 window.onscroll = function () {
@@ -40,9 +46,9 @@ window.onscroll = function () {
 
 if (navMenu) {
   const navMenuBtn = document.getElementById("navMenuBtn");
-  const headerMenu = document.getElementById("headerMenu");
 
   navMenuBtn.onclick = () => {
+
     navMenuBtn.classList.toggle("active");
     navMenu.classList.toggle("active");
     header.classList.add("active");
@@ -53,6 +59,11 @@ if (navMenu) {
       header.classList.add("active");
     }
     if (window.innerWidth < 1024) {
+      body.classList.add("active");
+      header.classList.add("active");
+    }
+    if (searchMenu.classList.contains("active")) {
+      searchMenu.classList.remove("active");
       body.classList.add("active");
       header.classList.add("active");
     }
@@ -70,7 +81,46 @@ if (navMenu) {
     }
   };
 }
+if (searchMenu) {
+  const searchBtn = document.getElementById("searchBtn");
+  const searchClose = document.getElementById("searchClose");
 
+  searchBtn.onclick = () => {
+    searchMenu.classList.toggle("active");
+    header.classList.add("active");
+    body.classList.toggle("active");
+
+    if (header.classList.contains("sticky")) {
+      header.classList.add("active");
+    }
+    if (navMenu.classList.contains("active")) {
+      navMenu.classList.remove("active");
+      headerMenu.classList.remove("active");
+      navMenuBtn.classList.remove("active");
+      body.classList.add("active");
+      header.classList.add("active");
+    }
+  };
+  searchClose.onclick = () => {
+    searchMenu.classList.remove("active");
+    header.classList.remove("active");
+    body.classList.remove("active");
+
+    if (header.classList.contains("sticky")) {
+      header.classList.add("active");
+    }
+  };
+  window.addEventListener("click", (event) => {
+    if (event.target == searchMenu) {
+      searchMenu.classList.remove("active");
+      body.classList.remove("active");
+      header.classList.remove("active");
+      if (header.classList.contains("sticky")) {
+        header.classList.add("active");
+      }
+    }
+  });
+}
 // sliders
 var $status = $(".pagingInfo");
 $(".rooms__inner-slider").each(function (index, element) {
@@ -171,3 +221,24 @@ dropdownBtns.forEach((btn) => {
     }
   };
 });
+
+const bookingForm = document.getElementById("bookingForm");
+if (bookingForm) {
+  const inputs = document.querySelectorAll(".bookingForm__input");
+  inputs.forEach((item) => {
+    const inputItem = item.querySelector("input");
+    const label = item.querySelector("label");
+    if (inputItem.value.length != 0) {
+      label.classList.add("top");
+    } else {
+      label.classList.remove("top");
+    }
+    inputItem.onchange = () => {
+      if (inputItem.value.length != 0) {
+        label.classList.add("top");
+      } else {
+        label.classList.remove("top");
+      }
+    };
+  });
+}

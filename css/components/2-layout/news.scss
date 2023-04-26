@@ -122,11 +122,6 @@
  
   }
 }
-// 1380px
-@mixin news-xxxlg-xxxxlg {
-  .news {
-  }
-}
 // 1250px
 @mixin news-xlg-xxlg-extra {
   .news {
@@ -138,11 +133,6 @@
     &Item {
       margin: 0 6px;
     }
-  }
-}
-// 1180px
-@mixin news-xlg-xxlg {
-  .news {
   }
 }
 // 1024px

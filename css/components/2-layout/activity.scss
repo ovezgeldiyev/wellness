@@ -43,6 +43,22 @@
             width: calc(60% - 15px);
             max-width: 720px;
         }
+        &-links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            &.sm {
+                a {
+                    margin-bottom: 0;
+                }
+            }
+            a {
+                margin: 0 18px 15px 0;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
         .title6 {
             font-size: 13px;
             line-height: 16px;
@@ -66,7 +82,7 @@
                 font-weight: 500;
             }
         }
-        .pargraph {
+        .paragraph {
             margin-bottom: 24px;
         }
         a {
@@ -78,7 +94,7 @@
             position: relative;
             font-weight: 500;
             font-family: $montserrat;
-            padding-bottom: 8px;
+            padding-bottom: 6px;
             display: inline-flex;
             align-items: center;
             &.uniq {
@@ -244,18 +260,12 @@
         }
     }
 }
-// 1250px
-@mixin activity-xlg-xxlg-extra {
-    .activity {
-
-    }
-}
 // 1180px
 @mixin activity-xlg-xxlg {
     .activity {
         margin-bottom: 60px;
         &__inner {
-            .pargraph {
+            .paragraph {
                 margin-bottom: 18px;
             }
         }
@@ -280,6 +290,7 @@
 // 930px
 @mixin activity-md-lg {
     .activity {
+        margin-bottom: 50px;
         &::before {
             width: 100%;
         }
@@ -305,22 +316,10 @@
         }
     }
 }
-// 750px
-@mixin activity-sm-md {
-    .activity {
- 
-    }
-}
-// 650px
-@mixin activity-sm-md-extra {
-    .activity {
-
-    }
-}
 // 540px
 @mixin activity-xsm-sm {
     .activity {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         padding: 40px 0;
         &.rev {
             .activity__inner {
@@ -343,7 +342,7 @@
                     width: 40px;
                 }
             }
-            .pargraph {
+            .paragraph {
                 margin-bottom: 14px;
             }
             a {
@@ -363,6 +362,17 @@
 // 440px
 @mixin activity-xxsm-xsm {
     .activity {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+        padding: 30px 0;
+        &__inner {
+            &-links {
+                a {
+                    margin-right: 14px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
     }
 }

@@ -175,11 +175,6 @@
     }
   }
 }
-// 1250px
-@mixin location-xlg-xxlg-extra {
-  .location {
-  }
-}
 // 1180px
 @mixin location-xlg-xxlg {
   .location {
@@ -238,16 +233,6 @@
         }
       }
     }
-  }
-}
-// 930px
-@mixin location-md-lg {
-  .location {
-  }
-}
-// 750px
-@mixin location-sm-md {
-  .location {
   }
 }
 // 650px
@@ -330,10 +315,5 @@
         }
       }
     }
-  }
-}
-// 440px
-@mixin location-xxsm-xsm {
-  .location {
   }
 }

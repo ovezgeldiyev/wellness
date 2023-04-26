@@ -22,9 +22,32 @@
     <header class="header" id="header">
       <div class="headerMenu" id="headerMenu">
       </div>
+      <div class="headerSearch" id="searchMenu">
+        <div class="headerSearch__inner">
+          <form action="" class="headerSearch__inner-form">
+            <span id="searchClose">
+              zavřít
+            </span>
+            <label for="searchInput">Prohledat web:</label>
+            <div class="headerSearch__inner-row">
+              <div class="input">
+                <input type="text" placeholder="Hledaný výraz..." id="searchInput">
+              </div>
+              <button type="submit" class="button secondary">
+                <span>
+                  <svg>
+                    <use xlink:href="#searchIcon"></use>
+                  </svg>
+                </span>
+                vyhledat
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
       <div class="auto__container">
         <div class="header__inner">
-          <a href="#" class="header__inner-logo">
+          <a href="index.html" class="header__inner-logo">
             <img class="light" src="./images/logo.png" alt="" />
             <img class="dark" src="./images/logo-dark.png" alt="" />
           </a>
@@ -32,12 +55,12 @@
             <ul class="nav__inner">
               <li>
                 <a id="navMenuBtn">
-                  hotel
+                  Hotel
                 </a>
               </li>
               <li>
                 <a href="#">
-                  top nabídka
+                  Top nabídka
                 </a>
               </li>
               <li>
@@ -46,7 +69,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="spa.html">
                   Wellness & spa
                 </a>
               </li>
@@ -56,13 +79,13 @@
                 </a>
               </li>
               <li>
-                <a href="#">
-                  aktivity
+                <a href="activity.html">
+                  Aktivity
                 </a>
               </li>
               <li>
                 <a href="#">
-                  pro firmy
+                 Pro firmy
                 </a>
               </li>
               <div class="nav__inner-buttons">
@@ -86,7 +109,7 @@
             <div class="navMenu" id="navMenu">
               <div class="navMenu__inner">
                 <div class="navMenu__inner-col">
-                  <a href="#">
+                  <a href="rooms.html">
                     Naše pokoje
                   </a>
                   <a href="#">
@@ -154,13 +177,13 @@
                 <a href="#">DE</a>
               </div>
             </div>
-            <a href="#" class="header__inner-search">
+            <button class="header__inner-search" id="searchBtn">
               <span>
                 <svg>
                   <use xlink:href="#searchIcon"></use>
                 </svg>
               </span>
-            </a>
+            </button>
             <a href="#" class="header__inner-call">
               <span>
                 <svg>
@@ -193,7 +216,6 @@
     <section class="hero">
       <div class="hero__bg">
         <video class="avia__video" muted loop autoplay src="./images/hero.mp4"></video>
-        <!-- <img src="./images/hero.png" alt=""> -->
       </div>
       <div class="auto__container">
         <div class="hero__inner">

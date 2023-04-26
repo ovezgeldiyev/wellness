@@ -1,5 +1,8 @@
 @import "./fonts/stylesheet.css";
 @import "./easypick.css";
+@import "./lightgallery-bundle.css";
+@import "./lg-thumbnail.css";
+@import "./lg-zoom.css";
 
 // 1-main components
 @import "./components/1-main/variables.scss";
@@ -21,6 +24,8 @@
 @import "./components/2-layout/location.scss";
 @import "./components/2-layout/newsletter.scss";
 @import "./components/2-layout/contact.scss";
+@import "./components/2-layout/article.scss";
+@import "./components/2-layout/booking.scss";
 
 // 3-pages components
 @import "./components/3-pages/index.scss";

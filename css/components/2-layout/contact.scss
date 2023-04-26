@@ -1,12 +1,35 @@
 .contact {
   background-color: #f9fafd;
-  padding: 50px 0;
   border-bottom: 1px solid #0e1a4720;
-  
+  &.big {
+    border: unset;
+    background-color: unset;
+    .contact {
+      &__inner {
+        background-color: #f9f4f1;
+        padding: 50px 40px;
+      }
+      &Item {
+        max-width: unset;
+        width: calc(30% - 8px);
+        &:first-child {
+          width: calc(70% - 8px);
+         }
+         &__icon {
+           width: 48px;
+           height: 48px;
+         }
+         &__content {
+          width: calc(100% - 68px);
+         }
+      }
+    }
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 50px 0;
   }
   &Item {
     display: flex;
@@ -56,12 +79,67 @@
     .title5 {
       color: $primary;
       font-weight: 500;
+      br {
+        display: none;
+      }
+    }
+  }
+}
+// 1380px
+@mixin contact-xxxlg-xxxxlg {
+  .contact {
+    &.big {
+      .contact {
+        &__inner {
+          padding: 40px 20px;
+        }
+        &Item {
+          width: calc(26% - 8px);
+          &:first-child {
+            width: calc(74% - 8px);
+          }
+          &__icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+          }
+          &__content {
+            width: calc(100% - 50px);
+          }
+        }
+      }
+    }
+    &Item {
+      &__icon {
+        margin-right: 15px;
+      }
     }
   }
 }
 // 1180px
 @mixin contact-xlg-xxlg {
   .contact {
+    &.big {
+      .contact {
+        &__inner {
+          padding: 40px 20px;
+        }
+        &Item {
+          width: calc(26% - 8px);
+          &:first-child {
+            width: calc(74% - 8px);
+          }
+          &__icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+          }
+          &__content {
+            width: calc(100% - 50px);
+          }
+        }
+      }
+    }
     &Item {
       &__icon {
         margin-right: 15px;
@@ -72,7 +150,9 @@
 // 1024px
 @mixin contact-lg-xlg {
   .contact {
-    padding: 40px 0;
+    &__inner {
+      padding: 40px 0;
+    }
     &Item {
       width: calc(32% - 5px);
       &:last-child {
@@ -109,6 +189,27 @@
 // 930px
 @mixin contact-md-lg {
   .contact {
+    &.big {
+      .contact {
+        &__inner {
+          padding: 20px;
+        }
+        &Item {
+          width: calc(30% - 8px);
+          &:first-child {
+            width: calc(70% - 8px);
+          }
+          &__icon {
+            width: 30px;
+            height: 30px;
+          }
+          &__content {
+            width: calc(100% - 40px);
+          }
+ 
+        }
+      }
+    }
     &Item {
       .title5 {
         font-size: 18px;
@@ -125,6 +226,29 @@
 // 750px
 @mixin contact-sm-md {
   .contact {
+    &.big {
+      .contact {
+        &Item {
+          width: 100%;
+          &:first-child {
+            width: 100%;
+          }
+          &__icon {
+            width: 48px;
+            height: 48px;
+            margin-right: 20px;
+          }
+          &__content {
+            width: calc(100% - 68px);
+          }
+          .title5 {
+            br {
+              display: block;
+            }
+          }
+        }
+      }
+    }
     &__inner {
         flex-direction: column;
         align-items: flex-start;
@@ -173,13 +297,59 @@
     }
   }
 }
-// 650px
-@mixin contact-sm-md-extra {
-  .contact {
-  }
-}
 // 540px
 @mixin contact-xsm-sm {
   .contact {
+    &.big {
+      .contact {
+        &Item {
+          &__icon {
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+          }
+          &__content {
+            width: calc(100% - 45px);
+          }
+          .title5 {
+            font-size: 22px;
+            line-height: 25px;
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 440px
+@mixin contact-xxsm-xsm{
+  .contact {
+    &.big {
+      margin: 0 -20px;
+      width: calc(100% + 40px);
+      .contact {
+        &Item {
+          &__icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+          }
+          &__content {
+            width: calc(100% - 40px);
+          }
+          .title5 {
+            font-size: 20px;
+            line-height: 24px;
+          }
+          .title6 {
+            font-size: 13px;
+            line-height: 16px;
+            margin-bottom: 3px;
+          }
+        }
+      }
+    }
   }
 }
